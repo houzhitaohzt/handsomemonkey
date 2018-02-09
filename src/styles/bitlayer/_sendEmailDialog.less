@@ -1,0 +1,83 @@
+.send-email-common{
+	max-height: 344px;
+	overflow-y: auto;
+	.row {
+		padding: 10px !important;
+	}
+	&-main {
+		&-linker{
+			margin: 0px;
+			margin-right: 10px;
+			display: inline-block;
+			span {
+				margin-left: 10px;
+			}
+		}
+	}
+	&-table {
+		width: 100%;
+		overflow: hidden;
+		.table-left, .table-right {
+			width: 48%;
+			float: left;
+			position: relative;
+			/*搜索框定位*/
+			.send-email-common-table-search {
+				position: absolute;
+				top: 8px;
+				right: 20px;
+				display: block;
+				width: 200px;
+				height: 24px;
+				border-radius: 12px;
+				border: 1px solid #d9dfe9;
+				background-color: white;
+				input {
+					display: block;
+					height: 22px;
+					padding: 0px;
+				    color: #9FACBD;
+				    border:0;
+				    width: 164px;
+				    font-size: 14px;
+				    margin-left: 12px;
+				    outline: none;
+				}
+				i {
+					line-height: 24px;
+				    display: inline-block;
+				    font-size: 18px;
+				    color: #6852f3;
+				    position: absolute;
+				    right: 8px;
+				    top: 0px;
+				    font-weight: bold;
+				    cursor: pointer;
+				}
+			}
+		}
+		.content-button {
+			width: 4%;
+			float: left;
+			margin-top: 40px;
+			text-align: center;
+			.move-right, .move-left{
+				display: inline-block;
+				width: 18px;
+				height: 18px;
+				border: 1px solid #9facbd;
+				border-radius: 3px;
+				color: #9facbd;
+				text-align: center;
+				line-height: 18px;
+				font-size: 10px;
+				margin-top: 10px;
+				cursor: pointer;
+			}
+		}
+		.table-right {
+			width: 48%;
+			float: right;
+		}
+	}
+}

@@ -1,0 +1,56 @@
+.language-more {
+	display: inline-block;
+	position: relative;
+	color: #888;
+	border: 1px solid transparent;
+	border-radius: 3px;
+	outline: none;
+	.language-tip {
+		width: 90px;
+		height: 24px;
+		margin-top: 3px;
+		line-height: 24px;
+		cursor: pointer;
+		position: relative;
+		i{
+			position: absolute;
+    		right: 5px;
+   			top: 5px;
+		}
+		span {
+			margin: 0 5px;
+		}
+	}
+	.content {
+		position: absolute;
+		top: 30px;
+		right: 0px;
+		list-style:none;
+		border: 1px solid #0066cc;
+		width: 200px;
+		max-height: 150px;
+		border-radius: 6px;
+		padding: 5px 0px;
+		background-color: white;
+		overflow-y: auto;
+		overflow-x: hidden;
+		z-index: 2;
+		li {
+			list-style: none;
+			color: black;
+			text-indent: 20px;
+			width: 200px;
+			height: 32px;
+			line-height: 32px;
+			font-size: 16px;
+		}
+		li:hover {
+			color: white;
+			background-color: #bbbbbb;
+		}
+	}
+}
+.language-more.focus {
+	border: 1px solid #0066cc;
+	color: #0066cc;
+}

@@ -1,0 +1,747 @@
+/*
+	* 模板打印
+*/
+
+// 字体
+.font-hide{ /*字体隐藏*/
+	overflow:hidden; text-overflow:ellipsis; white-space:nowrap;
+}
+
+.font-lowercase{ /*样式 小写*/
+	text-transform:lowercase; 
+}
+ 
+.underline{ /*下划线*/
+	text-decoration:underline !important;
+}           
+
+
+
+// 手势
+.pointer{ /*手势*/
+	cursor:pointer;
+}
+
+.no-drop{ /*不可编辑*/
+	cursor:no-drop;
+}
+
+
+
+
+
+
+// 模板打印 home
+.print-home{
+	position:relative;
+	padding:20px 15px 15px 15px;
+
+	h2{
+		font-size: 15px;
+	}
+
+	aside{
+		position:absolute;
+		top:20px;
+		left:5px; 
+
+		.btn{
+			padding: 6px 6px;
+			font-size: 13px;		
+		}
+	}
+	
+	figure{
+		padding:0px 0px 0px 12%;
+	} 
+
+
+
+	.btn-group{
+		position:fixed;
+		left:50%;
+		top:231px;
+		z-index:11;
+	}
+}
+
+// 模板打印 公共样式
+.print-template{
+	position:relative;
+	border:1px solid rgba(0,0,0,0.5);
+	border-radius:5px;
+	padding:30px 15px 80px 15px;
+	font-size:14px;
+
+	header{
+		position:relative;
+		width:initial;
+		padding-bottom:10px;
+		min-width: inherit;
+		
+		img{
+			position:absolute;
+			top:0px;
+			left:0px;
+			width:210px;
+			height:33px;
+		}
+
+		label{
+			margin:0px 0px 0px 30px;
+		}
+
+		h3{
+			padding-left:500px;
+			margin-bottom:5px;
+			font-size:16px;
+			font-weight: bold; 			
+			text-align:right;
+			text-height:66px;	
+			overflow:hidden; text-overflow:ellipsis; white-space:nowrap;
+		}
+
+		p{	
+			padding-left:500px; 
+			text-align:right;
+			text-height:46px;
+			overflow:hidden; text-overflow:ellipsis; white-space:nowrap;
+		}
+
+		input{
+			width:600px;
+		}
+	}
+
+	section{
+		ul{
+			li{
+				background: #fff;
+			}
+		}
+	}
+
+	table{
+		width:100%; 
+		border-top:1px solid rgba(0,0,0,0.3);
+		border-left: 1px solid rgba(0,0,0,0.3);
+
+		th{
+			font-size:16px;
+			text-align:center;
+			border-right:1px solid rgba(0,0,0,0.3);
+			border-bottom: 1px solid rgba(0,0,0,0.3);
+			background:none;
+		}
+
+		td{
+			
+			padding:3px 5px;
+			text-align:center;
+			border-right:1px solid rgba(0,0,0,0.3);
+			border-bottom: 1px solid rgba(0,0,0,0.3);
+
+			input{
+				width:100%;
+				
+			}
+
+			input.text-center{
+				margin:0px;
+			}
+
+			textarea{
+				width:100%;
+				margin:0px;
+			}
+		}
+
+		td.text{
+			position:relative;
+
+			span{
+				position:absolute;
+				left:5px;
+				line-height:24px;
+			}
+
+			input{
+				padding-left:30px;
+			}
+		}
+
+		td.title{
+			font-size:16px;
+		}
+	}
+
+	footer{
+		li.remarks{
+			margin-top:50px;
+			padding-top:20px;
+			border-top:2px solid #000;
+
+			span{
+				display:inline-block;
+				width:20%;
+				height:100%;
+				text-align:center; 
+			}
+		}
+	}
+
+	input{
+		border:none;
+		border:1px solid yellow;
+		border-color:#fff;
+
+		&:hover{
+			border-bottom-color:#459bff;
+		}
+	}
+
+	input.title{
+		font-size:16px;
+	}
+
+	input[readonly]{
+		cursor:no-drop;  
+	}
+
+	textarea{
+		border:none;
+		border:1px solid yellow;
+		border-color:#fff;
+
+		&:hover{
+			border-bottom-color:#459bff;
+		}
+	}
+
+	textarea[readonly]{
+		cursor:no-drop;  
+	}
+
+	.title{
+		font-size:16px; 
+	}
+
+	.weight{
+		font-weight:bolder;
+	}
+
+	.text-right{
+		text-align:right;
+	}
+
+	.text-center{
+		text-align:center;
+	}
+
+	.no-drop{
+		cursor:no-drop;
+	}
+}
+
+
+
+
+
+/*************************** 其它 模板 css ****************************/
+
+// commercial invoice
+.commercial-invoice{
+	section{
+		padding:38px 0px 0px 0px;
+
+		h1{
+			margin-bottom:20px;
+			font-size: 32px;
+		}
+
+		ol{
+			display:inline-block;
+			width:37%;
+		}
+
+		ul{
+			display:inline-block;
+			width:63%;
+			padding:0px 100px 0px 50px;
+
+			li.textarea{
+				height:120px;
+				padding: 0px;
+			}
+
+			label{
+				width:86px;
+			}
+
+			input{
+				width:60%;
+			}
+
+			textarea{
+				margin-left:90px;
+				width:70% !important;
+			}
+		}
+
+		li{
+			display:inline-block;
+			width:100%;
+			height:40px;
+		}
+
+		hr{
+			margin-top:40px; 
+			border:none;
+		}
+
+		label{
+			display:inline-block;
+			width:100px;
+			text-align:right;
+		}
+
+		input{
+			width:210px;
+		}
+
+
+	}
+
+	tbody{
+
+		tr{
+			height:60px;
+		}
+
+		input{
+			text-align:center;
+		}
+	}
+
+	footer{		
+		ul{
+			width:100%;
+			height:30px;
+			margin:30px 0px 10px 0px;
+
+			li{
+				float:left;
+				width:30%;
+				height:100%;				
+			}
+		}
+
+
+		textarea{
+			margin-top:30px; 
+			width:683px !important; 
+		}
+	}
+}
+
+
+// list 
+.print-list{
+	position:relative;
+	border:none;	
+
+	button{
+		outline: none !important;
+	}
+
+	.btn-group{
+		position: inherit;
+		width: 100%;
+		text-align: center;
+
+		.btn{
+			float: none;
+		}
+	}
+
+	table{
+
+		tbody{
+
+			tr:hover{
+				background:rgba(33,185,178,0.1);
+			}
+
+			tr.selected{
+				background:rgba(33,185,178,0.5);
+			}		
+		}
+
+		th.check{
+			position:relative;
+			width:30px;
+			cursor:pointer;
+
+			&:after{
+				position:absolute;
+				top:50%;
+				left:50%;
+				margin-top:-8px;
+				margin-left:-8px;
+				display:inline-block;
+				content:'';
+				width:16px;
+				height:16px;
+				border:1px solid rgba(0,0,0,0.3);
+			}
+
+			&:before{
+				position:absolute;
+				top:50%;
+				left:50%;
+				margin-top:-8px;
+				margin-left:-7px;
+				display:none;
+				content:'\2714';
+				line-height:16px;
+				font-family:'fooding';
+			}
+		}
+
+		td.check{
+			position:relative;
+			width:30px;
+			cursor:pointer;
+			font-size:16px;
+			font-weight:bolder;
+
+			&:after{
+				position:absolute;
+				top:50%;
+				left:50%;
+				margin-top:-8px;
+				margin-left:-8px;
+				display:inline-block;
+				content:'';
+				width:16px;
+				height:16px;
+				border:1px solid rgba(0,0,0,0.3);
+			}
+
+			&:before{
+				position:absolute;
+				top:50%;
+				left:50%;
+				margin-top:-8px;
+				margin-left:-7px;
+				display:none;
+				content:'\2714';
+				line-height:16px;
+				font-family:'fooding';
+			}
+		}
+
+		tr.pointer{
+			cursor:pointer;
+		}
+
+		tr.selected{
+			td.check{
+				&:before{
+					display:inline-block;
+				}			
+			}
+
+			th.check{
+				&:before{
+					display:inline-block;
+				}			
+			}
+		}
+	} 
+}
+
+
+// packing-list
+.packing-list{
+	
+	tbody{
+
+		textarea{
+			height:65px;
+		}
+
+		textarea.text-center{
+			padding-top:23px;
+		}
+
+	}
+}
+
+
+// customs-declaration
+.customs-declaration{
+	
+	table{
+		td{
+			text-align:left;
+		}
+	}
+}
+
+// sales-contract
+.sales-contract{
+
+	header{
+
+		h1,p{
+			padding:0px;
+			text-align:center;
+		}
+
+		h1{
+			margin-bottom:17px;
+		}
+	}
+
+	section{
+		padding-top:6px;
+		
+		ul,ol{
+			width:50%;
+			float:left;
+			padding:30px 30px 20px 30px;
+
+			label{
+				width:103px;
+				text-align:right;
+			}
+
+			input{
+				width:70%;
+			}
+
+			textarea{
+				width:70% !important;
+			}
+
+			li.textarea{
+
+
+			}
+		}
+
+
+	}
+
+	footer{
+
+		li{
+			list-style-type:none;
+
+			label{
+				font-weight:bold;
+			}
+
+			input{
+				width:50%;
+			}
+		}
+		
+		textarea{
+			width: 100%;
+		}
+
+	}
+}
+
+// shipping-advice
+.shipping-advice{
+
+	section{
+		h1{
+			margin-top: 20px;
+			font-size: 23px;
+		}
+	}
+
+	td{
+		text-align:left !important;
+	}
+}
+
+// proforma-invoice
+.proforma-invoice{
+	header{
+		h2{
+			text-align:right;
+		}
+	}
+
+	section{
+		padding-top:23px;
+
+		h1{
+			margin-bottom:15px;
+			text-decoration: underline;
+		}
+
+		ul,ol{
+			float:left;
+
+			label{
+				width:103px;
+				text-align:right;
+			}
+
+			input{
+				width:60%;
+			}
+		}
+		ul{			
+			width:70%;
+			padding-left:30px;
+		}
+		ol{
+			width:30%;
+		}
+	}
+
+	footer{
+
+		input{
+			width:50%;
+		}
+
+		label{
+			font-weight:bold;
+		}
+
+		hr{
+			margin-bottom:43px;
+			border-color:#000;
+    		border-width:2px;
+		}
+
+		ul{
+			position:relative; 
+
+			label{
+				position:absolute;
+				left:0px;
+			} 
+		}
+
+		ol{
+			li{
+				textarea{
+					margin-left:15px;
+				}
+			}
+		}
+
+		li{
+			list-style-type:none;
+		}
+
+		li.total{
+			padding-left:38%;
+			text-align:right;
+			label{
+				float:left;
+			}
+		}
+	}
+}
+
+
+// invoice
+.invoice{
+	header{
+
+		h1,p{
+			text-align:center;
+			padding:0px;
+		}
+
+		h1{
+			margin-bottom:20px;
+		}
+			
+	}
+
+	section{
+		padding:0px;
+	}
+}
+
+
+// contract
+.contract{
+	label{
+		font-weight:bold;
+	}	
+
+	li{
+		list-style-type:none;
+	}
+
+	section{
+		padding:0px;
+
+		h1{
+			margin-bottom:10px;
+			text-decoration:underline;
+		}
+
+		ul.head{
+			float:left;
+			width:70%;
+			padding-left:60px;
+
+			input{
+				width:70%;
+			}
+		}
+
+		ol.head{
+			float:right;
+			width:30%;
+
+			input{
+				width:70%;
+			} 	 
+		}
+	}
+
+	ul.sign{
+		display:inline-block;
+
+		li{
+			float:left;
+			width:50%;
+			margin-top:10px;
+			padding-left:56px;
+		}
+
+		input{
+			width:50%;
+		}
+	}
+
+	header{
+		h2,p,label{
+			text-align:left;
+			padding:0px;
+			margin:0px;
+		}
+
+		label{
+			font-weight:normal;
+		}
+	}
+
+	textarea{
+		width: 100%;
+	}
+}

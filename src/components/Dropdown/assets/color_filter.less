@@ -1,0 +1,31 @@
+/*表头的颜色分类*/
+
+.color-menu {
+    list-style: none;
+    display: list-item;
+    text-align: center;
+    max-width: 90px;
+    position: absolute !important;
+    padding: 3px;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, .15);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    background-clip: padding-box;
+    ul{
+        border: none !important;
+        box-shadow:0 0 0 0 !important;
+        li{
+            padding: 2px 3px !important;
+        }
+    }
+    .color-menu-item-mix() {
+        height: 15px;
+        line-height: 15px;
+        cursor: point;
+        padding: 2px 30px;
+    }
+    &-item {
+        .color-menu-item-mix()
+    }
+
+}

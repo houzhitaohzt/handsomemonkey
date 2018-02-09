@@ -1,0 +1,148 @@
+@girdlayout-height : 32px;
+@girdlayout-color : #888;
+/* @girdlayout-color : #9FACBD; */
+/**
+	create by houzhitao
+	////主要用于项目中部分用于栅格布局后的样式修改(不能当全局公共样式使用)
+	在使用的最外层加上一个className={'girdlayout'}
+*/
+p{
+	margin-bottom: 0;
+}
+.girdlayout {
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	margin-top: 10px;
+	.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+		padding:0 10px 0 0;
+	}
+	.button-click {//文字span按钮的样式
+		display: inline-block;
+		padding: 4px 8px;
+		letter-spacing: 1px;
+		color: #0066cc;
+		border: 1px solid #0066cc;
+		font-size: 14px;
+		margin-right: 10px;
+		border-radius: 6px;
+		cursor: pointer;
+		-moz-user-select:none;
+        -webkit-user-select: none;
+        -ms-user-select: none
+	}
+	.button-click:hover {
+		background-color: #0066cc;
+		color: #ffffff;
+	}
+	//label 下面嵌套a标签，当链接使用时
+	.link-route {
+		display: inline-block;
+		height: @girdlayout-height;
+		line-height: @girdlayout-height;
+		cursor: pointer;
+	}
+	.link-route:link {
+		color: #0000FF;
+	}
+	.link-route:visited {
+		color: #00FF00;
+	}
+	.link-route:hover {
+		color:#FF0000;
+	}
+	.link-route:active {
+		color: #00FF00;
+	}
+	.row {
+		padding: 0px !important;
+		margin: 6px 0px;
+		li{
+			margin-bottom: 10px;
+		}
+		label {
+			display: inline-block;
+			// height: @girdlayout-height;
+			text-align: right;
+			color: @girdlayout-color;
+			font-size: 14px;
+			// line-height: @girdlayout-height;
+			margin-top: 5px;
+			i{
+				color: red;
+			}
+			span {
+				color: red;
+				display: inline-block;
+				// height: @girdlayout-height;
+				padding: 0 2px;
+				vertical-align: middle;
+				// line-height: @girdlayout-height;
+			}
+		}
+		p {
+			color: #000033;
+		}
+	}
+	.form-group {
+		padding: 0px;
+		margin: 0px;
+		//0margin-bottom: 10px;
+	}
+	.radio-text {
+		/*和单选按钮并排时，后面文字标签的span加上class <span className={'radio-text'}></span>*/
+		display: inline-block;
+		height: @girdlayout-height;
+		line-height: @girdlayout-height;
+		margin-right: 10px;
+		color: @girdlayout-color;
+	}
+	//改变select插件的padding
+	.currency-btn.select-from-currency{
+		padding: 0px;
+	}
+	//改变时间插件padding
+	.datetime {
+		//datatime 时间插件 该className="datetime"加在<DateTime />父级div上
+		/**   使用实例
+			<label className={'col-md-4 col-lg-4'}>预计开始时间</label>
+			<div className={'col-md-8 col-lg-8 datetime'}>
+				<DataTime
+					showTime={true}
+					isShowIcon={true}
+					width={'100%'}
+					disabled={radioState=="已响应"}
+				/>
+			</div>
+		*/
+		padding: 0px;
+		div {
+			width: 100%;
+			padding: 0px;
+		}
+	}
+	.textarea {
+		//textarea文本textarea框样式 用法<textaera className={'textarea'}></textarea>
+		font-size: 14px;
+		resize:none;
+		height: 100px;
+		border-radius: 6px;
+		background-color: #eeeeee;
+		outline: none;
+		color: black;
+		padding: 0px;
+		text-indent: 1em;
+	}
+	//响应目的
+	.response {
+		position: relative;
+		i {
+			position: absolute;
+			right: 10px;
+			top: 0px;
+			font-size: 27px;
+		    display: inline-block;
+		    line-height: 35px;
+		}
+	}
+}

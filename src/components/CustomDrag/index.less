@@ -1,0 +1,92 @@
+@customDrag:custom-drag;
+
+.@{customDrag} {
+  width:100%;
+  &-table {
+    margin: 0;
+    padding:0;
+    list-style: none;
+    h3, h4 {
+      padding:0;
+      margin: 0;
+      float: left;
+    }
+    h4 {
+      height: 40px;
+    }
+    //表格头部
+    &-head {
+      width:100%;
+      overflow: hidden;
+      &-draghandle {
+        width:40px;
+      }
+      h3 {
+        height: 50px;
+      }
+    }
+
+    //拖拽主体部分
+    &-body {
+      width:100%;
+      overflow: hidden;
+      &-draghandle {
+        position: relative;
+        width:40px;
+        height:40px;
+        &-move {
+          display: inline-block;
+          width:24px;
+          height: 24px;
+          border-radius: 4px;
+          //box-shadow: 0 0 2px #fff;
+          background-color: transparent;
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          margin: auto;
+          cursor: move !important;
+          border: none;
+          visibility: hidden;
+          &-top, &-middle , &-foot {
+            display:inline-block;
+            position: absolute;
+          }
+          &-top {
+            width: 0px;
+            top: 0;
+            left: 8px;
+            border-bottom: 4px solid #888;
+            border-top: 4px solid transparent;
+            border-left: 4px solid transparent;
+            border-right: 4px solid transparent;
+          }
+          &-middle {
+            width: 2px;
+            top: 8px;
+            left: 11px;
+            height: 8px;
+            background-color: #888;
+          }
+          &-foot {
+            width: 0px;
+            top: 16px;
+            left: 8px;
+            border-top: 4px solid #888;
+            border-bottom: 4px solid transparent;
+            border-left: 4px solid transparent;
+            border-right: 4px solid transparent;
+          }
+        }
+      }
+    }
+    &-body:hover {
+      background-color: #eaf8fe;
+    }
+    &-body:hover &-body-draghandle-move {
+      visibility: visible;
+    }
+  }
+}

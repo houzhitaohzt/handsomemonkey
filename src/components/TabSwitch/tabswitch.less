@@ -1,0 +1,70 @@
+@TabSwitchPrefixCls:rc-tabswitch;
+
+.@{TabSwitchPrefixCls} {
+	width: 100%;
+	height: auto;
+	background-color: #fff;
+	&-title {
+		list-style:none;
+		width: 100%;
+		height: 36px;
+		border-bottom: 1px solid #eee;
+		margin: 0;
+		padding: 0;
+		&-single {
+			position: relative;
+			display: inline-block;
+			height: 36px;
+			padding: 0 14px;
+			color: #000033;
+			background-color: #eeeeee;
+			border-radius: 6px 6px 0 0;
+			margin: 0 2px;
+			float: left;
+			line-height: 36px;
+			cursor: pointer;
+			border-bottom: 1px solid transparent;
+			-moz-user-select:none;
+	       -webkit-user-select: none;       
+	       -ms-user-select: none; 
+	       .close {
+		       	display: inline-block;
+		       	position: absolute;
+		       	top: 0px;
+		       	right: 2px;
+		       	color: transparent;
+		       	font-size: 14px;
+	       }
+	       .close-none {
+	       		display: none;
+	       }
+		}
+		&-single:hover .close {
+       		color: red;
+       	}
+		&-single.active {
+			border: 1px solid #eee;
+			background-color: #fff;
+			border-bottom: 1px solid #fff;
+			.close {
+				color: red;
+			}
+		}
+		&-single-add {
+			display: inline-block;
+			height: 36px;
+			color: red;
+			line-height: 36px;
+			float: right;
+			cursor: pointer;
+			margin-right: 20px;
+			i {
+				font-size: 14px;
+				color: red;
+			}
+		}
+	}
+	&-content {
+		width: 100%;
+	}
+}

@@ -1,0 +1,1201 @@
+/*
+    * email css
+*/
+
+// 邮件公共 颜色
+.bac-theme{
+    background: rgba(67, 99, 147, 0.7);
+}
+
+// 公共样式 
+.noohle-email{
+
+    h2{
+        padding: 0px;
+        margin: 0px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+}
+
+// mail home
+.noohle-email{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background: white;
+
+    div.ant-popover-inner-content{
+        padding: 0px;
+    }
+
+    div.ant-popover{
+        z-index: 100;
+    }
+
+    menu {
+        position: relative;
+        z-index: 3;
+        overflow: hidden;
+        height: inherit;
+        width: 180px;
+        margin: 0px;
+        background: #eff2f7;
+
+        &.on{
+            width: 30px;
+
+            > ul{
+                padding: 10px 0px 10px 0px;
+
+                li{
+                    position: relative;
+
+                    b{
+                        position: absolute;
+                        left: -3px;
+                        top: -9px;
+                    }
+                }
+            }
+
+            header{
+                button{
+                    left: 3px;
+                }
+            }
+        }
+
+        &:hover{
+            mark{
+                display: block;
+                right: 0px;
+            }
+        }
+
+        header{
+            position: relative;
+            padding: 11px 31px 5px 31px;
+
+            h2{
+                margin: 0px;
+            }
+            p{
+                margin: 5px 0px 2px 0px;
+            }
+
+            button{
+                position: absolute;
+                right: 3px;
+                outline: none !important;
+                background: transparent;
+
+                &.top{
+                    top: 10px;
+                }
+
+                &.bot{
+                    bottom: 2px;
+                }
+
+            }
+        }
+
+        hr{
+            height: 2px;
+            margin: 0px 16px;
+            background: #d8dbe0;
+        }
+
+        > mark{
+            position: absolute;
+            top: 50%;
+            right: -16px;
+            z-index: 13;
+            padding: 7px 1px;
+            border-radius: 6px 0px 0px 6px;
+            cursor: pointer;
+            transition: 0.2s all ease-in;
+            color: #fff;
+            background: rgba(51,103,153,1);            
+        }
+
+        > ul{
+            height: 85%;
+            width: 180px;
+            padding: 10px 0px 10px 10px;
+            font-size: 14px;
+            margin: 0px;
+            border-radius: inherit;
+            overflow-y: auto;
+
+            li{
+                padding: 8px 0px;
+                cursor: pointer;
+
+                &.on{
+                    background: #d7e2ed;
+                }
+
+                &:hover{
+                    background: #d7e2ed;
+                }
+
+                i{
+                    display: inline-block;
+                    width: 30px;
+                    padding: 0px 8px 0px 8px;
+                }
+
+                b{
+                    max-width: 39px;
+                    border-radius: 39%;
+                    line-height: 16px;
+                    text-align: center;
+                    display: inline-block;
+                    background: #436393;
+                    margin-left: 5px;
+                    padding: 0px 3px;
+                    color: #fff;
+                }
+
+
+            }
+
+            ol{
+                margin: 0px;
+                padding: 0px 20px 0px 30px;
+                font-size: 12px;
+
+                p{
+                    cursor: pointer;
+
+                    &.on{
+                        background: #d7e2ed;
+                    }
+
+                    &:hover{
+                        background: #d7e2ed;
+                    }
+                }
+            }
+        }
+
+    }
+
+
+    .article{
+        position: absolute;
+        top:0px;
+        width: 100%;
+        height: 100%;
+        padding-left: 180px;
+        background: #fff;
+
+        &.on{
+            padding-left: 30px;
+        }
+
+        .keys-page{
+            position: absolute;
+            top: 0px;
+            right: 229px;
+        }
+
+        .mail-list{
+            > nav{
+                position: relative;
+                padding: 9px 8px;
+                height: 46px;
+
+                .serch{
+                    position: absolute;
+                    top: 0px;
+                    right: 10px;
+                    height: 100%;
+                    padding-top: 8px;
+
+                    .ant-input{
+                        width: 137px;
+                        padding-right: 20px;
+                    }
+
+                    .ant-input-group-addon{
+                        cursor: pointer;
+
+                        .empty-close{
+                            position: absolute;
+                            top: 1px;
+                            left: -25px;
+                            padding: 6px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 共享
+.noohle-email{
+    .shareAffix{
+        display: inline-block;
+        width: 100%;
+        max-height: 65px;
+        margin: 0px;
+        overflow-y: auto;
+        padding: 3px 5px;
+        border: 1px solid #436393;
+
+        span{
+            display: inline-block;
+            position: relative;
+            max-width: 210px;
+            margin: 0px 9px 0px 0px;
+            line-height: 21px;
+            padding: 0px 23px 0px 9px;
+            border: 1px solid #f0f4f8;
+            border-radius: 10px;
+            background: #f0f4f8;
+
+        }
+
+        i{
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            padding: 5px 5px;
+            cursor: pointer;
+
+            &:hover{
+                color: #d9534f;
+            }
+        }
+    }
+
+    .sharePagination{
+        width: 100%;
+        position: relative;
+        height: 43px;
+
+        .keys-page{
+            right: -19px;
+        }
+    }
+}
+
+// 归档 css
+.noohle-email{
+    .archive{
+        padding: 3px 0px;
+
+        button{
+            padding: 0px;
+            border: none;
+            background: transparent;
+        }
+
+        .mark{
+            background: rgba(67, 99, 147, 0.7);
+
+            span{
+                color: rgba(67, 99, 147, 0.7);
+                background: #fff;
+            }
+        }
+
+        .archivePagination{
+            width: 100%;
+            position: relative;
+            height: 43px;
+
+            .keys-page{
+                right: -19px;
+            }
+
+            .foodding-select{
+                display: inline-block;
+            }
+        }
+
+        .heard{
+            position: relative;
+            padding-top: 5px;
+            text-align: left;
+            .archiveAffix{
+                display: inline-block;
+                width: 100%;
+
+
+                span{
+                    display: inline-block;
+                    position: relative;
+                    max-width: 170px;
+                    margin: 0px 9px 0px 0px;
+                    line-height: 21px;
+                    padding: 0px 23px 0px 9px;
+                    border: 1px solid #f0f4f8;
+                    //border-radius: 10px;
+                    background: #f0f4f8;
+
+                }
+
+                b{
+                    color: #fff;
+                    padding: 0px 3px;
+                    margin-right: 2px;
+                    background: rgba(67, 99, 147, 1);
+                }
+
+                i{
+                    position: absolute;
+                    top: 0px;
+                    right: 0px;
+                    padding: 5px 5px;
+                    cursor: pointer;
+
+                    &:hover{
+                        color: #d9534f;
+                    }
+                }
+            }
+
+            .select{
+                position: absolute;
+                top: 0px;
+                right: 0px;
+                width: 230px;
+            }
+        }
+    }
+}
+// 设置 css
+.noohle-email{
+    .set-home{
+        > ul{
+            padding: 10px 5px 0px 5px;
+            border-bottom: 1px solid rgba(67, 99, 147, 0.3);
+
+            li{
+                display: inline-block;
+                border-bottom: 3px solid #fff;
+                padding: 3px 5px;
+                cursor: pointer;
+
+                &.on{
+                    border-color: rgba(67, 99, 147, 0.7);
+                }
+
+                &:hover{
+                    border-color: rgba(67, 99, 147, 0.7);
+                }
+            }
+        }
+
+        .detail{
+            padding: 10px 10px;
+
+
+            .li{
+                position: relative;
+                display: inline-block;
+                width: 150px;
+                padding: 3px 5px;
+                margin: 10px 10px 0px 0px;
+                border: 1px solid rgba(67, 99, 147, 0.3);
+                border-radius: 5px;
+                background: #fff;
+                transition: 0.3s all ease-in;
+
+                &:hover{
+                    transform: scale(1.1);
+                }
+
+                p.top{
+                    width: 70%;
+                }
+
+                i{
+                    position: absolute;
+                    top: 5px;
+                    right: 3px;
+                    padding: 3px;
+                    cursor: pointer;
+
+                    &:hover{
+                        transform: scale(1.3);
+                    }
+
+                    &.left{
+                        right: 23px;
+                        &:hover{
+                            color: rgba(67, 99, 147, 1);
+                        }
+                    }
+
+                    &.right{
+                        &:hover{
+                            color: #d9534f;
+                        }
+                    }
+                }
+
+                b{
+                    display: inline-block;
+                    height: 18px;
+                    margin-top: 7px;
+                }
+
+                b.right{
+                    float: right;
+                    line-height: 17px;
+                    text-decoration: underline;
+                    cursor: pointer;
+
+                    &:hover{
+                        color: rgba(67, 99, 147, 0.7);
+                    }
+
+                    &:active{
+                        color: rgba(67, 99, 147, 1);
+                    }
+
+                    &.on{
+                        color: rgba(67, 99, 147, 1);
+                    }
+                }
+            }
+
+            li.first{
+                float: left;
+                text-align: center;
+                i{
+                    position: initial;
+                    font-size: 19px;
+                    margin: 11px 0px;
+
+                    &:hover{
+                        color: rgba(67, 99, 147, 1);
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 页面的 预览详情
+.noohle-email {
+
+    .mail-list{
+        position: relative;
+
+        .detail-page{
+            position: absolute;
+            top: 110px;
+            right: 10%;
+            z-index: 1111;
+            width: 80%;
+            height: 370px;
+            //max-height: 370px;
+            padding: 55px 0px 0px 0px;
+            background: #fff;
+            border-radius: 6px;
+            box-shadow: rgba(51,51,51,0.5) 2px 2px 3px;
+
+            ul{
+                display: inline-block;
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                z-index: 11;
+                width: 100%;
+                padding: 10px 10px 5px 10px;
+                border-bottom: 2px solid rgba(67, 99, 147, 0.6);
+
+                button{
+                    float: right;
+                }
+            }
+
+            .html-page{
+                width: 100%;
+                height: 100%;
+                margin: 0px;
+                padding: 10px 10px;
+                padding-left: 20px;
+                overflow-y: auto;
+            }
+        }
+    }
+}
+
+// 页面 详情
+.noohle-email{
+    .detail-mail{
+        position: relative;
+        //width: fit-content;
+        background: #fff;
+
+        nav{
+            padding: 10px 10px;
+            padding-left: 20px;
+            border-bottom: 1px solid rgba(67, 99, 147, 0.5);
+            background: #fff;
+        }
+
+        header{
+            position: relative;
+            // position: absolute;
+            // top: 49px;
+            // z-index: 3;
+            width: 100%;
+            padding: 10px 10px;
+            padding-left: 20px;
+            border-bottom: 1px solid rgba(67, 99, 147, 0.2);
+            background: #fff;
+
+            &.on{
+                max-height: 32px;
+                overflow: hidden;
+            }
+
+            h2{
+                display: inline-block;
+                max-width: 80%;
+                padding-right: 5px;
+                margin-bottom: 0;
+            }
+
+            i{
+                font-size: 17px;
+                margin-left: 5px;
+                cursor: pointer;
+            }
+
+            i.toggle{
+                position: absolute;
+                top: 5px;
+                right: 20px;
+                padding: 3px;
+                cursor: pointer;
+            }
+
+            li{
+
+                label.bold{
+                    font-weight: bold;
+                    margin: 0px;
+                }
+
+                span{
+                    padding: 0px 6px;
+                }
+
+                i{
+                    font-size: 13px;
+                }
+            }
+
+            li.addresser{
+                i:hover{
+                    color: blue;    
+                }
+            }
+
+            li.send{
+                padding-top: 2px;
+
+                label{
+                    position: relative;
+                    top: -4px;
+                }
+
+                span{
+                    display: inline-block;
+                    max-width: 700px;
+                }
+            }
+
+            li.down{
+                height: 22px;
+                max-height: 100px;
+                overflow: auto;
+                transform-style: preserve-3d;                    
+                transition: 1s height ease-in;
+                
+                
+                &:hover{
+                    height: inherit;
+                }
+
+                > div{
+                    display: inline;
+
+                    > div{
+                        display: inline;
+                    }
+                }
+
+                nav{
+                    padding: 0px;
+                    border-bottom: none;
+                }
+
+                span.down{
+                    display: inline-block;
+                    padding: 0px 20px 0px 0px;
+
+                    i{
+                        float: right;
+                        margin: 0px;
+                        padding-top: 3px;
+
+                        &.down{
+                            float: left;
+                        }
+
+                        &.downBtn{
+                            color: blue;
+                        }
+                    }
+
+                    b{
+                        display: inline-block;
+                        max-width: 200px;
+                        padding: 0px 6px 0px 3px;
+                    }
+                }
+            }
+        }
+
+        .html-page{
+            display: inline-block;
+            width:100%;
+            margin: 0px;
+            padding: 37px 10px 10px 10px;
+            padding-left: 20px;
+            border-radius: 0px;
+            background: #fff;
+        }
+    }
+}
+
+// 黑名单
+.noohle-email{
+    .blacklist{
+        margin: 0px 10px 0px 10px;
+        border-radius: initial;       
+        border-top: 1px solid #eee;
+
+        ul{
+            padding: 10px 15px;
+
+            
+
+            li{
+                display: inline-block;
+                position: relative;
+                padding: 5px 33px 5px 5px;
+                margin: 10px 20px 0px 0px;
+                border: 1px solid rgba(0,0,0,0.3);
+                border-radius: 7px;
+
+                transform-style: preserve-3d;                    
+                transition: 0.6s all ease;
+
+                &:hover{
+                    border-color: rgba(67, 99, 147, 1);
+                    transform: scale(1.1);
+                }
+
+                span{
+                    display: inline-block;
+                    width: 173px;
+                }  
+
+                i{
+                    position: absolute;
+                    top: 0px;
+                    right: 0px;
+                    padding: 10px;
+                    border-left: 1px solid rgba(0,0,0,0.3);
+                    border-radius: 0px 7px 7px 0px;
+                    background: rgba(0,0,0,0.1);
+                    cursor: pointer;               
+                }              
+            }
+        }
+    }
+}
+
+
+//写邮件
+.write-page{
+  background-color: #fff;
+  padding: 0px 20px;
+    .rc-select-selection--single{
+        background-color: inherit !important;
+    }
+  .nav{
+    padding: 7px 0px 5px 0px;
+    border-bottom: 1px solid #e9edf2;
+    ul{
+      display: inline-block;
+      height: 100%;
+      margin-bottom: 0;
+      li{
+        float: left;
+        min-width: 52px;
+        height: 30px;
+        font-size: 14px;
+        color: #989fa6;
+        text-align: center;
+        line-height: 30px;
+        margin-right: 10px;
+        padding: 0px 11px;
+        border: 1px solid #eef2f6;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      li:hover{
+        border-color: #a295f4;
+        color: #a295f4;
+      }
+    }
+  }
+  .content{
+    width: 100%;
+    .head{
+      .li{
+        width: 100%;
+        font-size: 14px;
+        line-height: 25px;
+      }
+      .link-a{
+            color: #a295f4;
+      }
+      label{
+        float: left;
+        width: 58px;
+        margin: 0px;
+        font-weight: normal;
+        color: #20262f;
+      }
+      label:hover{
+        color:#a295f4;
+        cursor: pointer;
+      }
+      mark{
+        display: block;
+        padding: 0px;
+        max-height: 43px;
+        overflow-y: auto;
+        background: #fff;
+        border-bottom: 1px solid #e9e9e9;
+        input{
+          width: 200px;
+          border: none;
+          outline: none;
+        }
+        span{
+          display: inline-block;
+          line-height: 18px;
+          margin-left: 5px;
+          padding: 0px 8px 0px 7px;
+          border: 1px solid #eef2f6;
+          border-radius: 10px;
+          background: #d5dee7;
+          i{
+            position: relative;
+            top: 1px;
+            left: 2px;
+            margin: 0px;
+            cursor: pointer;
+            font-size: 10px;
+            &:hover{
+              color: red;
+            }
+          }
+        }
+      }
+      .span{
+        padding-right: 10px;
+      }
+      a{
+        font-style: none;
+        text-decoration: none;
+        color: #989fa6;
+      }
+      em{
+        margin: 0px 10px 0px 0px;
+      }
+      .accessory{
+        cursor: pointer;
+        padding-right: 0px;
+        i{
+          padding-right: 0px;
+          margin-right: 5px;
+        }
+      }
+      .sendUser{
+        float: left;
+        margin-right: 20px;
+      }
+    }
+  }
+  .access-hover:hover{
+    // background-color: #9cc6ef;
+  }
+
+  //联系人
+  .linkman{
+    position: absolute;
+    z-index: 11111;
+    width: 656px;
+    height: 370px;
+    background: #fff;
+    -ms-box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+    h1{
+      width: 100%;
+      height: 30px;
+      padding-left: 10px;
+      margin-bottom: 7px;
+      font-size: 15px;
+      line-height: 30px;
+      text-align: left;
+      color: #fff;
+      background: #a295f4;
+      cursor: all-scroll;
+    }
+    .menu{
+      float: left;
+      width: 50%;
+      height: 73%;
+      padding: 0px 10px 0px 40px;
+      h2{
+        padding-left: 10px;
+        font-size: 14px;
+        line-height: 26px;
+        color: #303030;
+      }
+      .tab-box{
+        width: 100%;
+        height: 85%;
+
+      }
+    }
+    .content{
+      height: 93%;
+      padding: 5px 0px;
+      border: 1px solid #e8e8e8;
+      border-radius: 4px
+    }
+    footer{
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      width: 100%;
+      height: 50px;
+      padding-top: 13px;
+      text-align: center;
+      button{
+        width: 60px;
+        height: 30px;
+        font-size: 13px;
+        color: #fff;
+        border: none;
+        background: #c5c5c5;
+        outline: none;
+      }
+      .on{
+        margin-right: 10px;
+        background: #a295f4;
+      }
+    }
+    ul{
+      li{
+        position: relative;
+        width: 100%;
+        line-height: 28px;
+        padding: 0px 24px;
+        font-size: 12px;
+        line-height: 28px;
+        color: #9ca3a9;
+        cursor: pointer;
+        &:hover{
+          color: #a295f4;
+          background:rgba(162,149,244,0.27);
+          i{
+            display: block !important;
+          }
+        }
+      }
+    }
+    nav{
+      width: 100%;
+      height: 32px;
+      padding: 2px 8px 0px 8px;
+      font-size: 12px;
+      line-height: 30px;
+      color: #8c949b;
+      border-bottom: 1px solid #e9edf2;
+      li{
+        float: left;
+        width: 86px;
+        height: 100%;
+        line-height: 30px;
+        text-align: center;
+        border-bottom: 1px solid #fff;
+        cursor: pointer;
+      }
+      .on{
+        color: #aca0f6;
+        border-bottom-color: #aca0f6;
+      }
+    }
+    label{
+      width: 100%;
+      height: 30px;
+      margin: 0px;
+      padding: 0px 5px 6px 5px;
+      position: relative;
+      i{
+        position: absolute;
+        top: 6px;
+        left: 13px;
+        display: block;
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        text-align: center;
+        cursor: pointer;
+      }
+      input{
+        width: 100%;
+        height: 100%;
+        padding: 0px 15px 0px 30px;
+        font-size: 12px;
+        outline: none;
+        border: none;
+        border-radius: 20px;
+        background: #f7f7f7;
+      }
+    }
+    .ant-tree li{
+      padding: 0 !important;
+      line-height: 20px;
+      &:hover{
+        background: initial !important;
+        color: #9ca3a9 !important;
+
+      }
+    }
+  }
+}
+
+// 邮件联系人  卡片
+aside.mail-linkman-card{
+    position: relative;
+    padding-top: 15px;
+
+    header{
+        position: relative;
+        padding: 0px 20px 0px 86px;
+        margin: 0px 10px;
+
+        img{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 70px;
+            height: 70px;
+            border-radius: 7px;
+        }
+
+        span.write{
+            position: absolute;
+            top: 0px;
+            right: 20px;
+            cursor: pointer;
+        }
+
+        li{
+            height: 18px;
+            margin-bottom: 3px;
+        }
+
+        li.name{
+            b{
+                display: inline-block;
+                max-width: 253px;
+                padding-right: 15px;
+                cursor: pointer;
+
+                &:hover{
+                    color: rgba(67, 99, 147, 0.7);
+                    text-decoration: underline;
+                }                
+            }
+        }
+
+        li.company{
+            padding-top: 1px;
+            max-width: 300px;
+            cursor: pointer;
+
+            &:hover{
+                color: rgba(67, 99, 147, 0.7);
+                text-decoration: underline;
+            }
+        }
+
+        li.link-btn{
+            padding-top: 8px;
+
+            i{
+                padding: 2px 7px;
+                margin-right: 8px;
+                cursor: pointer;
+                border: 1px solid rgba(102,204,255,0.2);
+                border-radius: 10px;
+            }
+        }
+    }
+
+    >ol{
+        display: inline-block;
+        position: relative;
+        width: 560px;
+        height: 110px;
+        margin: 27px 0px 27px 0px;
+        padding: 0px 10px;
+
+        > li{
+            position: relative;
+            height: 18px;
+            margin-bottom: 13px;
+            width: 50%;
+            float: left;
+            padding-right: 20px;
+
+            b{
+                display: inline-block;
+                width: 173px;
+                padding-left: 10px;
+            }
+
+            i{
+                margin-top: 5px;
+            }
+
+            i.icon{
+                float: left;
+            }
+
+            i.arrows{
+                float: right;
+                margin-right: 30px;
+                cursor: pointer;
+            }
+        }
+
+        ul{
+            position: absolute;
+            top: 25px;
+
+            li{
+                padding: 0px 5px;
+            }
+        }
+
+    }
+
+    >p{
+        color: #fff;
+        font-size: 15px;
+        text-align: center;
+        padding: 4px 0px;
+        border-radius: 0px 0px 5px 5px;
+        position: relative;
+        bottom: -1px;
+        cursor: pointer;
+    }
+}
+
+//发送成功
+.send-success{
+  padding-top: 200px;
+  .head{
+    position: relative;
+    height: 32px;
+    text-align: center;
+    > span{
+      padding: 0px 14px 0px 44px;
+      font-size: 28px;
+      line-height: 32px;
+      color: #1c222b;
+    }
+
+    > div{
+        display: inline-block;
+    }
+
+    .dialog-wrapper{
+        top: 0px;
+        width:100% !important;
+    }
+    // > button{
+    //   position: absolute;
+    //   width: 116px;
+    //   height: 32px;
+    //   font-size: 16px;
+    //   border: 1px solid #a79bf5;
+    //   border-radius: 10px;
+    //   outline: none;
+    // }
+    // li{
+    //   display: inline-block;
+    //   margin-right: 20px;
+    //   line-height: 18px;
+    //   cursor: pointer;
+    //   margin-left: 130px;
+    //   span{
+    //       padding-left: 7px;
+    //   }
+    // }
+  }
+  .footer{
+    height: 22px;
+    margin-top: 18px;
+    line-height: 22px;
+    text-align: center;
+    li{
+      display: inline-block;
+      margin-left: 18px;
+      font-size: 14px;
+      line-height: 22px;
+      color: #949ca2;
+      cursor: pointer;
+      span{
+            padding-left: 8px;
+      }
+      b{
+            font-weight: normal;
+      }
+      i{
+            padding-left: 8px;
+      }
+    }
+  }
+}
+.modal{
+	z-index: 10000 !important;
+}
+.panel-default > .panel-heading{
+	background-color: #fff !important;
+}
+.note-btn-group .note-btn{
+  border:0 !important;
+}

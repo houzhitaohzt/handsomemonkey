@@ -1,0 +1,319 @@
+li {
+  list-style: none;
+}
+
+.tab-header {
+  .fl {
+    float: left;
+  }
+  .fr {
+    float: right;
+  }
+  .clearBoth {
+    clear: both;
+  }
+  .route--active {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  .head-bg {
+    height: 40px;
+    position: fixed;
+    // min-width: 1136px;
+    min-width: 1100px;
+    width: 100vw;
+    background-color: #436393;
+    z-index: 111;
+    top: 0;
+    // background: -webkit-linear-gradient(30deg, #6751ED, #ADEADF); /* Safari 5.1 - 6.0 */
+    // background: -o-linear-gradient(30deg, #6751ED, #ADEADF); /* Opera 11.1 - 12.0 */
+    // background: -moz-linear-gradient(30deg, #6751ED, #ADEADF); /* Firefox 3.6 - 15 */
+    // background: linear-gradient(30deg, #6751ED, #ADEADF); /* 标准的语法（必须放在最后） */
+    .logo {
+      padding-right: 60px;
+      padding-left: 50px;
+      float: left;
+      img {
+        margin-top: 10px;
+      }
+    }
+
+    .fontSize {
+      float: right;
+      height: 100%;
+      width: 35px;
+      padding-top: 8px;
+
+      label {
+        color: #fff;
+        font-size: 20px;
+        cursor: pointer;;
+      }
+    }
+
+    .searchBox{
+      position: relative;
+      float: right;   
+      height: 100%;    
+      padding-top: 10px;
+      padding-right: 20px;
+      transition: 0.3s ease-in all;
+
+      &:hover{
+        width: 230px;
+      }
+
+      input{
+        width: 100%;
+        color: #fff;
+        margin-bottom: 10px; 
+        border: none;
+        border-bottom: 1px solid rgba(0,0,51,0.1);
+        background: transparent;
+        outline: none;
+
+        &:focus{
+          border-bottom-color: #fff;
+        }
+
+        &::-webkit-input-placeholder {
+          color: snow;
+        }
+        &:-moz-placeholder {
+          color: snow;          
+        }
+        &:-ms-input-placeholder {
+          color: snow;          
+        }
+      }
+
+      i{
+        
+        position: absolute;
+        right: 0px;
+        display: inline-block;
+        margin-top: 2px;
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        line-height: 20px;  
+        color: #fff;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+
+        &::before{
+          color:#fff !important;
+        }       
+      } 
+
+      div{
+        
+        padding-top: 39px;
+        margin-right: -60px;
+        
+      }
+
+      ul{
+
+        border-radius: 6px;        
+        background: #fff;   
+        opacity: 0.9;
+        box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.17);
+        max-height: 160px;
+        overflow: auto;
+
+        li{
+          padding: 6px 10px;
+          cursor: pointer;         
+          overflow:hidden; text-overflow: ellipsis; white-space: nowrap;
+          
+          &:first-child{
+            border-top-left-radius: 6px;
+            border-top-right-radius: 6px;        
+          }
+
+          &:last-child{
+            border-bottom-left-radius: 6px;
+            border-bottom-right-radius: 6px;   
+          }          
+
+          &:hover{
+            color: #4125E8;
+            background-color: #EDEFFF;
+          }
+        }  
+
+      }
+    }
+
+  }
+  .user-link {
+    margin-top: 2px;
+    float: right;
+    padding-right: 10px;
+    ul {
+      li {
+        float: left;
+        padding-left: 8px;
+        padding-right: 8px;
+        font-size: 30px;
+        color: #fff;
+        &:hover {
+          text-decoration: none;
+        }
+        a {
+          color: #fff;
+          &:hover {
+            text-decoration: none;
+          }
+        }
+        sub {
+          width: 18px;
+          height: 18px;
+          line-height: 16px;
+          font-size: 8px;
+          text-align: center;
+          color: #ffffff;
+          top: 0px;
+          display: block;
+          background-color: #f21211;
+          border-radius: 10px;
+          margin-left: 18px;
+          margin-top: 3px;
+          position: absolute;
+        }
+      }
+    }
+  }
+  .nav_01 {
+    color: #fff;
+    font-size: 27px;
+    position: absolute;
+    right: 0;
+    top: -30px;
+    cursor: pointer;
+  }
+  .none {
+    display: none;
+  }
+  .box-sousuo {
+    position: absolute;
+    right: 44px;
+    top: 8px;
+    .sousuo {
+      position: relative;
+      .search {
+        position: absolute;
+        top: 8px;
+      }
+      .clear {
+        position: absolute;
+        right: 10px;
+        top: 8px;
+      }
+      i {
+        float: left;
+        line-height: 28px;
+        display: inline-block;
+        font-size: 24px;
+        padding-top: 2px;
+        padding-left: 5px;
+      }
+      .yashi {
+        font-size: 20px;
+        display: inline-block;
+        line-height: 21px;
+        padding-top: 4px;
+        padding-left: 4px;
+        color: #ccc;
+      }
+      input {
+        font-size: 12px;
+        padding-left: 35px;
+        outline: none;
+        padding-right: 35px;
+        width: 230px;
+        height: 30px;
+        border-radius: 20px;
+        color: #0066cc;
+        margin-top: 7px;
+        border: 1px solid #ccc;
+        &:focus {
+          border-color: #0066cc;
+          box-shadow: 0 0 1px 1px rgba(0, 102, 204, 0.7);
+        }
+      }
+    }
+  }
+
+  .nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    top: 40px;
+    height: 40px;
+    border-bottom: 1px solid #dddddd;
+    z-index: 110;
+    background-color: #f0f4f8;
+    min-width: 1366px;
+    ul {
+      padding-left: 0;
+      margin-left: 10px;
+      li:first-child {
+        a:hover {
+          span {
+            display: none;
+          }
+        }
+      }
+      li {
+        float: left;
+        position: relative;
+        cursor: hand;
+
+        > div {
+          margin-right: 8px;
+        }
+
+        a {
+          padding: 0px 16px;
+          font-family: "\5FAE\8F6F\96C5\9ED1";
+          color: #888;
+          display: inline-block;
+          font-size: 14px;
+          border-radius: 8px 8px 0 0;
+          -webkit-border-radius: 8px 8px 0 0;
+          margin-top: 6px;
+          line-height: 32px;
+          text-align: center;
+          background-color: #eeeeee;
+          border: 1px solid #dddddd;
+          border-bottom: 0;
+          .clear-delete {
+            color: #f70707;
+            position: absolute;
+            width: 13px;
+            height: 22px;
+            right: 10px;
+            bottom: 0;
+            top: 10px;
+            font-size: 10px;
+            display: none;
+          }
+
+        }
+        a:hover {
+          text-decoration: none;
+          opacity: 1;
+          .clear-delete {
+            display: block;
+          }
+        }
+
+      }
+    }
+
+  }
+}

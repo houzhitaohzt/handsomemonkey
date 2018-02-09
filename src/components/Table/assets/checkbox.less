@@ -1,0 +1,37 @@
+@tablePrefixCls: rc-table;
+
+.@{tablePrefixCls} {
+.select-check{
+      padding : 0 !important;
+      margin : 0 !important;
+      text-align:center;
+      vertical-align: middle;
+      span{
+        font-size: 14px;
+        padding : 1px;
+        display: inline-block;
+        font-family: 'Glyphicons Halflings';
+        font-style: normal;
+        font-weight: 100;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        border-radius : 2px;
+        color: transparent;
+        /* border : 1px solid #d0d0d1; */
+        box-sizing : border-box;
+        &::before{
+          content:"\e013"
+        }
+        &:hover{
+          color : white;
+          border : 1px solid #d0d0d1;
+        }
+      }
+    }
+    .select-check.select-checked{
+      span{
+        color: #0066cc;
+      }
+    }
+}

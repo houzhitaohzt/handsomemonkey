@@ -1,0 +1,3 @@
+import BusinessregistrationDetailLayout from './BusinessregistrationDetailLayout'
+
+export default BusinessregistrationDetailLayout

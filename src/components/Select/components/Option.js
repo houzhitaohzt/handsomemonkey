@@ -1,0 +1,10 @@
+import React from 'react';
+
+export default class Option extends React.Component {
+  static propTypes = {
+    value: React.PropTypes.any,
+  };
+
+  static isSelectOption = true;
+}
+

@@ -1,0 +1,301 @@
+
+.ReportContainer {
+
+  .rp-topbar {
+    margin-top: 0;
+    padding: 0 20px;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(#fff, #eee);
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #bbb;
+    justify-content: space-between;
+    > div {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .rp-topbar-item {
+    min-width: 40px;
+    text-align: center;
+    height: 36px;
+    margin: 2px;
+    cursor: pointer;
+    line-height: 36px;
+
+    .Dropdown-control {
+      padding: 0 25px 0 10px;
+      background-color: inherit;
+      border: 0;
+    }
+    .Dropdown-menu {
+      width: 80px;
+    }
+    .Dropdown-option {
+      padding: 0;
+    }
+  }
+
+  .rp-topbar-item-sl {
+    background: #ddd;
+  }
+
+  .rp-topbar-item:hover {
+    background: #ddd;
+  }
+
+  .rp-topbar-item:active {
+    background: #b8b8b8;
+  }
+
+  .rp-container {
+    display: flex;
+    position: relative;
+
+  }
+
+  .rp-pager {
+    display: block;
+    justify-content: center;
+    overflow: auto;
+    margin-top: 0;
+    flex: 1;
+    padding-right: 200px;
+  }
+
+  .rp-pager-wc {
+    font-size: 14px;
+    line-height: 14px;
+    position: relative;
+    padding: 20px 55px;
+    margin-top: 0; //6px;
+  }
+
+  .ht_clone_left {
+    top: 64px !important;
+    //position: fixed !important;
+    //top: 179px !important;
+  }
+
+  .ht_clone_top {
+    left: 88px !important;
+
+    position: fixed !important;
+    top: 119px !important;
+  }
+
+  .rp-pager-c {
+    border: 30px solid #eee;
+    background: #fff;
+    box-shadow: 0 0 12px 0 #09090980;
+    margin: 10px 0;
+    padding: 3px;
+  }
+
+  .rp-handsontable {
+    position: initial !important;
+  }
+
+  .ht_clone_top .htCore th {
+    border-bottom: 1px solid #ccc !important;
+    cursor: default !important;
+  }
+
+  .ht_clone_left .htCore th {
+    border-right: 1px solid #ccc !important;
+    cursor: default !important;
+  }
+
+  .handsontableInputHolder {
+    margin: 63px 0 0 88px;
+  }
+
+  .ht_master .htCore .rowHeader {
+    width: 0 !important;
+  }
+
+  .wtHolder {
+    //overflow: visible;
+  }
+  .handsontable .ht_clone_top .htCore colgroup col:first-child {
+    display: none;
+  }
+  .handsontable .htCore thead th:first-child {
+    display: none;
+  }
+  .handsontable .ht_clone_left .htCore th {
+    vertical-align: middle;
+  }
+  .rp-hot-clone-header {
+    position: relative;
+    left: 40px;
+  }
+
+  .rp-hot-clone-row {
+    position: relative;
+    left: -120px;
+  }
+
+  .rp-currentHeader {
+  }
+
+  .rp-currentRow {
+    background-color: #E7E8EF;
+  }
+
+  .rp-currentCol {
+    background-color: #F9F9FB;
+  }
+
+  .rp-attributes {
+    margin: 35px 10px;
+    width: 220px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    padding: 1px;
+    //background: #ddd;
+  }
+
+  .rp-collapse {
+    padding: 0;
+    border: 1px solid #bbb;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
+    .rc-collapse-content-box {
+      margin-top: 4px;
+      margin-bottom: 4px;
+    }
+
+    .rc-collapse-item-active {
+      flex: 1;
+    }
+
+    .rc-collapse-content {
+      padding: 0 6px;
+    }
+
+    .rc-collapse-item {
+      height: 38px;
+      display: flex;
+      border: 0;
+      flex-direction: column;
+      padding-top: 0;
+    }
+
+    .rc-collapse-content {
+      overflow-y: auto;
+      flex: 1;
+    }
+  }
+
+  .rp-collapse-panel {
+    height: 100%;
+    margin-top: 0;
+    background: linear-gradient(#fff, #eee);
+
+    > div {
+      overflow-y: auto;
+      height: 100%;
+    }
+  }
+
+  .rp-collapse-panel-c {
+    margin-top: 0;
+    border-radius: 0;
+
+  }
+
+  .handsontable th, .handsontable td {
+    height: 22px;
+    line-height: 14px;
+  }
+
+  .handsontable thead th .relative {
+    padding: 4px 0;
+  }
+
+  //样式
+  .htBold { font-weight: bold;}
+  .htUnderline { text-decoration: underline;}
+  .htItalic { font-style: italic}
+  .htLeft { text-align: left;}
+  .htCenter { text-align: center;}
+  .htRight { text-align: right;}
+  .htJustify {text-align: justify;}
+  .htTop { vertical-align: top;}
+  .htMiddle { vertical-align: middle;}
+  .htBottom {vertical-align: bottom;}
+  .htBorderBottom { border-bottom: 1px solid #000;}
+  .htBorderTop { border-top: 1px solid #000;}
+  .htBorderLeft { border-left: 1px solid #000;}
+  .htBorderRight { border-right: 1px solid #000;}
+  .htFontSize-12 { font-size: 12px; }
+  .htFontSize-14 { font-size: 14px; }
+  .htFontSize-16 { font-size: 16px; }
+  .htFontSize-18 { font-size: 18px; }
+  .htFontSize-22 { font-size: 22px; }
+  .htFontSize-26 { font-size: 26px; }
+  .htFontSize-30 { font-size: 30px; }
+  .htFontSize-36 { font-size: 36px; }
+  .htFontSize-42 { font-size: 42px; }
+  .htFontSize-46 { font-size: 46px; }
+  .htFontSize-50 { font-size: 50px; }
+  .htFontSize-54 { font-size: 54px; }
+  //结束
+
+  .rp-field-row {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+
+    textarea {
+      min-width: 185px;
+      max-width: 185px;
+      min-height: 60px;
+      max-height: 300px;
+    }
+
+    label {
+      margin-bottom: 2px;
+    }
+  }
+}
+
+//.ReportPrint {
+//  display: flex;
+//  justify-content: center;
+//  margin-top: 0;
+//  //overflow-y: auto;
+//  font-size: 14px;
+//  line-height: 14px;
+//
+//  .rp-pager-print {
+//    background: #fff;
+//    border: 0 solid blue;
+//    overflow-x: hidden;
+//  }
+//
+//  .handsontable th, .handsontable td {
+//    border: 0;
+//  }
+//}
+//
+//.report-print-html {
+//  overflow-y: auto !important;
+//}
+//
+//.report-print-body {
+//  background: #eee;
+//  height: initial;
+//  overflow-y: auto !important;
+//}
+//
+

@@ -1,0 +1,130 @@
+/*
+* 卡片 
+*/  
+
+
+aside.noohle-card{
+    position: relative;
+    padding-top: 15px;
+
+    header{
+        position: relative;
+        padding: 0px 20px 0px 86px;
+        margin: 0px 10px;
+
+        img{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 70px;
+            height: 70px;
+            border-radius: 7px;
+        }
+
+        span.write{
+            position: absolute;
+            top: 0px;
+            right: 20px;
+            cursor: pointer;
+        }
+
+        li{
+            height: 18px;
+            margin-bottom: 3px;
+        }
+
+        li.name{
+            max-width: 300px;
+            cursor: pointer;   
+
+            &:hover{
+                color: rgba(67, 99, 147, 0.7);
+                text-decoration: underline;
+            }            
+
+        }
+
+        li.company{
+            padding-top: 1px;
+            max-width: 300px;
+            cursor: pointer;
+
+            &:hover{
+                color: rgba(67, 99, 147, 0.7);
+                text-decoration: underline;
+            }
+
+        }
+
+        li.link-btn{
+            padding-top: 8px;
+
+            i{
+                padding: 2px 7px;
+                margin-right: 8px;
+                cursor: pointer;
+                border: 1px solid rgba(102,204,255,0.2);
+                border-radius: 10px;
+            }
+        }
+    }
+
+    >ol{
+        display: inline-block;
+        position: relative;
+        width: 560px;
+        height: 110px;
+        margin: 27px 0px 27px 0px;
+        padding: 0px 10px;
+
+        > li{
+            position: relative;
+            height: 18px;
+            margin-bottom: 13px;
+            width: 50%;
+            float: left;
+            padding-right: 20px;
+
+            b{
+                display: inline-block;
+                width: 173px;
+                padding-left: 10px;
+            }
+
+            i{
+                margin-top: 5px;
+            }
+
+            i.icon{
+                float: left;
+            }
+
+            i.arrows{
+                float: right;
+                margin-right: 30px;
+                cursor: pointer;
+            }
+        }
+
+        ul{
+            position: absolute;
+            top: 25px;
+
+            li{
+                padding: 0px 5px;
+            }
+        }
+
+    }
+
+    >p{
+        color: #fff;
+        font-size: 15px;
+        text-align: center;
+        padding: 4px 0px;
+        border-radius: 0px 0px 5px 5px;
+        position: relative;
+        bottom: -1px;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,93 @@
+.template-email{
+    height: -webkit-fill-available;
+    background: #fff;
+
+    .detail{
+        padding: 10px 10px;
+        
+        
+        li{
+            position: relative;
+            display: inline-block;
+            width: 150px;
+            padding: 3px 5px;
+            margin: 10px 10px 0px 0px;
+            border: 1px solid rgba(67, 99, 147, 0.3);
+            border-radius: 5px;
+            background: #fff;
+            transition: 0.3s all ease-in;
+
+            &:hover{
+                transform: scale(1.1);
+            }
+
+            p.top{
+                width: 70%;
+            }
+
+            i{
+                position: absolute;
+                top: 5px;
+                right: 3px;
+                padding: 3px;
+                cursor: pointer;
+                
+                &:hover{
+                    transform: scale(1.3);
+                }
+
+                &.left{
+                    right: 23px;
+                    &:hover{
+                        color: rgba(67, 99, 147, 1);
+                    }                        
+                }
+
+                &.right{
+                    &:hover{
+                        color: #d9534f;
+                    }
+                }
+            }
+
+            b{
+                display: inline-block;
+                height: 18px;
+                margin-top: 7px;                    
+            }
+
+            b.right{
+                float: right;
+                line-height: 17px;
+                text-decoration: underline;
+                cursor: pointer;
+
+                &:hover{
+                    color: rgba(67, 99, 147, 0.7);                        
+                }
+
+                &:active{
+                    color: rgba(67, 99, 147, 1);                        
+                }                    
+
+                &.on{
+                    color: rgba(67, 99, 147, 1);
+                }
+            }
+        }
+
+        li.first{
+            float: left;
+            text-align: center;
+            i{
+                position: initial;
+                font-size: 19px;
+                margin: 11px 0px;
+
+                &:hover{
+                    color: rgba(67, 99, 147, 1);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,68 @@
+.react-contextmenu {
+    padding: 5px 0;
+    margin: 2px 0 0;
+    font-size: 14px;
+    color: #3c4859;
+    text-align: left;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-radius: .25rem;
+    outline: none;
+    opacity: 0;
+    pointer-events: none;
+    border-radius: 6px;
+    box-shadow: 0px 0px 5px #D9DFE9;
+    border: 1px solid #d9dfe9;
+    i{
+        color: #0066CC;
+        padding-right: 20px;
+    }
+
+    &&--visible {
+        opacity: 1;
+        pointer-events: auto;
+        color: #a295f4;
+        // box-shadow: 0 0 6px 6px rgba(0,0,6,0.2);
+    }
+    &-item {
+        padding: 8px 18px;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #373a3c;
+        text-align: inherit;
+        white-space: nowrap;
+        background: 0 0;
+        border: 0;
+    	cursor: pointer;
+    }
+
+    &-item&-item--active,
+    &-item:hover {
+        color: #fff;
+        i{
+            color: #fff;
+        }
+        background-color: #b8b8b8;
+        text-decoration: none;
+    }
+
+    &-item&-submenu {
+    	padding: 0;
+    }
+
+    &-item&-submenu > &-item {
+    }
+
+    &-item&-submenu > &-item:after {
+        content: "▶";
+        display: inline-block;
+        position: absolute;
+        right: 7px;
+        top:9px;
+    }
+
+    .example-multiple-targets::after {
+        content: attr(data-count);
+        display: block;
+    }
+}

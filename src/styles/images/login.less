@@ -1,0 +1,423 @@
+.core-layout__viewport {
+	padding: 0px !important;
+}
+.login-all {
+	width: 1920px;
+	overflow: auto;
+	background-image: url("./bg_login.jpg");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	&-content {
+		width: 100%;
+		height: 912px;
+		overflow: hidden;
+		&-figure {
+			width: 50%;
+			height: 100%;
+			float: left;
+			&-scroll {
+				width: 92.861%;
+				height: 80%;
+				float: right;
+				margin-top: 90px;
+			}
+		}
+		&-interface {
+			float: left;
+			width: 50%;
+			height: 100%;
+			&-main {
+				width: 64.861%;
+				height: 80%;
+				margin-top: 90px;
+				background-color: white;
+				border-radius: 6px;
+				padding: 9.261%;
+				h1 {
+					width: 100%;
+					height: 120px;
+					line-height: 120px;
+					color: #0066cc;
+					margin: 0px;
+					padding: 0px;
+					font-size: 60px;
+					text-align: center;
+				}
+				.input-email {
+					width: 100%;
+					height: 48px;
+					margin: 20px 0px;
+					position: relative;
+					.user {
+						display: inline-block;
+						width: 48px;
+						height: 48px;
+						font-size: 20px;
+						color: #888888;
+						text-align: center;
+						line-height: 48px;
+						position: absolute;
+						top: 0px;
+						left: 0px;
+					}
+					span {
+						display: table-cell;
+						width: 48px;
+						height: 48px;
+						text-align: center;
+						line-height: 48px;
+						position: absolute;
+						top: 0px;
+						right: 0px;
+						i {
+							color: #888888;
+							font-size: 16px;
+							cursor: pointer;
+						}
+					}
+					input {
+						display: inline-block;
+						border: 1px solid #eeeeee;
+						outline: none;
+						width: 100%;
+						padding-left: 48px;
+						padding-right: 48px;
+						height: 46px;
+						font-size: 16px;
+						color: #888888;
+						border-radius: 6px;
+					}
+					input:focus {
+						box-shadow: 0 0 10px #ccc;
+					}
+					input:focus + .user  {
+						color: #0066cc;
+					}
+					input:focus + .user + span > i  {
+						color: #0066cc;
+					}
+				}
+				.input-secret {
+					width: 100%;
+					height: 48px;
+					margin: 20px 0px;
+					position: relative;
+					.password {
+						display: inline-block;
+						width: 48px;
+						height: 48px;
+						font-size: 20px;
+						color: #888888;
+						text-align: center;
+						line-height: 48px;
+						position: absolute;
+						top: 0px;
+						left: 0px;
+					}
+					span {
+						display: inline-block;
+						height: 48px;
+						text-align: center;
+						line-height: 48px;
+						position: absolute;
+						top: 0px;
+						right: 0px;
+						i {
+							font-size: 16px;
+							color: #888888;
+							margin: 0px 10px;
+							cursor: pointer;
+						}
+					}
+					input {
+						display: inline-block;
+						border: 1px solid #eeeeee;
+						outline: none;
+						width: 100%;
+						padding-left: 48px;
+						padding-right: 80px;
+						height: 46px;
+						font-size: 16px;
+						color: #888888;
+						border-radius: 6px;
+					}
+					input:focus {
+						box-shadow: 0 0 10px #ccc;
+					}
+					input:focus + .password  {
+						color: #0066cc;
+					}
+					input:focus + .password + span > i  {
+						color: #0066cc;
+					}
+				}
+				.rember-language {
+					width: 100%;
+					height: 48px;
+					.rember-language-fi {
+						width: 70%;
+						float: left;
+						.word {
+							color: #888888;
+							font-size: 14px;
+							display: inline-block;
+							height: 30px;
+							line-height: 30px;
+							float: left;
+						}
+						.switch-on {
+							display: inline-block;
+							width: 60px;
+							height: 24px;
+							border: 1px solid #0066cc;
+							border-radius: 15px;
+							float: left;
+							line-height: 30px;
+							margin-left: 2%;
+							position: relative;
+							margin-top: 3px;
+							span {
+								color: #0066cc;
+								font-size: 14px;
+								display: inline-block;
+							    height: 24px;
+							    line-height: 24px;
+							    margin-left: 6px;
+							    float: left;
+							}
+							.ball {
+								display: inline-block;
+								width: 20px;
+								height: 20px;
+								border-radius: 100%;
+								background-color: #0066cc;
+								position: absolute;
+								top: 1px;
+								right: 1px;
+							}
+						}
+						.switch-off {
+							display: inline-block;
+							width: 60px;
+							height: 24px;
+							border: 1px solid #888888;
+							border-radius: 15px;
+							float: left;
+							line-height: 30px;
+							margin-left: 2%;
+							position: relative;
+							margin-top: 3px;
+							span {
+								color: #888888;
+								font-size: 14px;
+								display: inline-block;
+							    height: 24px;
+							    line-height: 24px;
+							    margin-right: 6px;
+							    float: right;
+							}
+							.ball {
+								display: inline-block;
+								width: 20px;
+								height: 20px;
+								border-radius: 100%;
+								background-color: #888888;
+								position: absolute;
+								top: 1px;
+								left: 1px;
+							}
+						}
+					}
+					.rember-language-more {
+						float: right;
+					}
+				}
+				.main-login {
+					width: 100%;
+					height: 60px;
+					margin: 25px 0px;
+					button {
+						width: 100%;
+						height: 100%;
+						background-color: #0066cc;
+						padding: 0;
+						margin: 0;
+						font-size: 18px;
+						color: white;
+						font-weight: normal;
+					    text-align: center;
+					    white-space: nowrap;
+					    vertical-align: middle;
+					    user-select: none;
+						background-image: none;
+						border-radius: 6px;
+						display: inline-block;
+						touch-action: manipulation;
+					    font-family: inherit;
+					    text-transform: none;
+					    text-rendering: auto;
+					    text-indent: 0px;
+						text-shadow: none;
+						-webkit-writing-mode: horizontal-tb;
+						outline: none;
+						border: none;
+						letter-spacing:8px
+					}
+				}
+				.registered {
+					width: 100%;
+					height: 48px;
+					margin: 25px 0px;
+					text-align: center;
+					.route {
+						color: #888888;
+						padding: 0 10px;
+					}
+					.route:first-child {
+						border-right: 1px solid #888888;
+					}
+					.route:hover {
+						color: #0066cc;
+					}
+				}
+			}
+		}
+	}
+	&-foot {
+		width: 100%;
+		height: 188px;
+		min-height: 60px;
+		&-help-about {
+			width: 100%;
+			text-align: center;
+			padding: 10px 0 10px;
+			.chained {
+				display: inline-block;
+				font-size: 14px;
+				color: #ffffff;
+				padding: 0px 10px;
+			}
+			.chained.rightborder {
+				border-right: 1px solid #ffffff;
+			}
+		}
+		&-describe {
+			width: 100%;
+			text-align: center;
+			padding: 10px 0 10px;
+			span {
+				color: #ffffff;
+			}
+			.image {
+				 display: inline-block;
+				 width: 14px;
+				 height:14px;
+				 background-image: url('./ghs.png');
+				 margin: 0 10px;
+			}
+		}
+	}
+}
+@media screen and (max-width:1800px) and (min-width:1600px) {
+	.login-all {
+		width: 1680px;
+		overflow: auto;
+		&-content {
+			height: 784px;
+		}
+		&-foot {
+			height: 156px;
+		}
+	}
+}
+@media screen and (max-width:1600px) and (min-width:1400px) {
+	.login-all {
+		width: 1440px;
+		overflow: auto;
+		.login-all-content {
+			height: 672px;
+			.login-all-content-figure {
+				width: 50%;
+				height: 100%;
+				float: left;
+				.login-all-content-figure-scroll {
+					width: 92.861%;
+					height: 80%;
+					float: right;
+					margin-top: 140px;
+				}
+			}
+			.login-all-content-interface-main {
+				width: 64.861%;
+				height: 70%;
+				margin-top: 140px;
+				background-color: white;
+				border-radius: 6px;
+				padding: 7.261%;
+				h1 {
+					width: 100%;
+					height: 90px;
+					line-height: 90px;
+					color: #0066cc;
+					margin: 0px;
+					padding: 0px;
+					font-size: 40px;
+					text-align: center;
+				}
+				.input-email, .input-secret, .main-login {
+					margin:10px 0px;
+				}
+			}
+		}
+		.login-all-foot {
+			height: 248px;
+			&-help-about{
+				padding: 30px 0 5px;
+			}
+			&-describe {
+				padding: 5px 0 ;
+			}
+		}
+	}
+}
+@media screen and (max-width:1400px) {
+	.login-all {
+		width: 1366px;
+		/*height: 708px;*/
+		overflow: auto;
+		.login-all-content {
+			height: 540px;
+			margin-bottom: 3%;
+			.login-all-content-interface-main {
+				width: 64.861%;
+				height: 100%;
+				margin-top: 90px;
+				background-color: white;
+				border-radius: 6px;
+				padding: 7.261%;
+				h1 {
+					width: 100%;
+					height: 80px;
+					line-height: 80px;
+					color: #0066cc;
+					margin: 0px;
+					padding: 0px;
+					font-size: 40px;
+					text-align: center;
+				}
+				.input-email, .input-secret, .main-login {
+					margin:10px 0px;
+				}
+			}
+		}
+		.login-all-foot {
+			height: 78px;
+			&-help-about{
+				padding: 15px 0 5px;
+			}
+			&-describe {
+				padding: 5px 0 ;
+			}
+		} 
+	}
+}

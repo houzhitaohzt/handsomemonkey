@@ -1,0 +1,3 @@
+import OvertimeregisterDetailLayout from './OvertimeregisterDetailLayout'
+
+export default OvertimeregisterDetailLayout

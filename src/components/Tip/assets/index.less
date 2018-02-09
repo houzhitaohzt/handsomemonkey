@@ -1,0 +1,141 @@
+@import "bootstrap_default.less";
+
+.card-toolip {
+  position: absolute;
+  z-index: 1060;
+  display: block;
+  visibility: visible;
+  font-size: 12px;
+  line-height: 1.5;
+}
+.card-toolip-hidden {
+  display: none;
+}
+.card-toolip-context {
+  span {
+    //display: table-cell;
+    display: inline-block;
+    word-wrap: break-word;
+    max-width: 800px;
+    vertical-align: middle;
+  }
+  i {
+    //display: table-cell;
+    vertical-align: middle;
+  }
+  a {
+    color: #fbbc00;
+    text-decoration: underline;
+  }
+}
+.card-toolip-copy:before{
+  content: "\e949";
+  margin-right: 8px;
+  cursor: pointer;
+}
+.card-toolip-placement-top,
+.card-toolip-placement-topLeft,
+.card-toolip-placement-topRight {
+  padding-bottom: 8px;
+}
+.card-toolip-placement-right,
+.card-toolip-placement-rightTop,
+.card-toolip-placement-rightBottom {
+  padding-left: 8px;
+}
+.card-toolip-placement-bottom,
+.card-toolip-placement-bottomLeft,
+.card-toolip-placement-bottomRight {
+  padding-top: 8px;
+}
+.card-toolip-placement-left,
+.card-toolip-placement-leftTop,
+.card-toolip-placement-leftBottom {
+  padding-right: 8px;
+}
+.card-toolip-inner {
+  //max-width: 250px;
+  //padding: 8px 10px;
+  //color: #fff;
+  //text-align: left;
+  //text-decoration: none;
+  //background-color: rgba(255,255,255, 0.85);
+  //border-radius: 4px;
+  //box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+  //min-height: 34px;
+}
+.card-toolip-arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+}
+.card-toolip-placement-top .card-toolip-arrow,
+.card-toolip-placement-topLeft .card-toolip-arrow,
+.card-toolip-placement-topRight .card-toolip-arrow {
+  bottom: 3px;
+  border-width: 5px 5px 0;
+  border-top-color: rgba(255,255,255, 0.85);
+}
+.card-toolip-placement-top .card-toolip-arrow {
+  left: 50%;
+  margin-left: -5px;
+}
+.card-toolip-placement-topLeft .card-toolip-arrow {
+  left: 16px;
+}
+.card-toolip-placement-topRight .card-toolip-arrow {
+  right: 16px;
+}
+.card-toolip-placement-right .card-toolip-arrow,
+.card-toolip-placement-rightTop .card-toolip-arrow,
+.card-toolip-placement-rightBottom .card-toolip-arrow {
+  left: 3px;
+  border-width: 5px 5px 5px 0;
+  border-right-color: rgba(255,255,255, 0.85);
+}
+.card-toolip-placement-right .card-toolip-arrow {
+  top: 50%;
+  margin-top: -5px;
+}
+.card-toolip-placement-rightTop .card-toolip-arrow {
+  top: 8px;
+}
+.card-toolip-placement-rightBottom .card-toolip-arrow {
+  bottom: 8px;
+}
+.card-toolip-placement-left .card-toolip-arrow,
+.card-toolip-placement-leftTop .card-toolip-arrow,
+.card-toolip-placement-leftBottom .card-toolip-arrow {
+  right: 3px;
+  border-width: 5px 0 5px 5px;
+  border-left-color: rgba(255,255,255, 0.85);
+}
+.card-toolip-placement-left .card-toolip-arrow {
+  top: 50%;
+  margin-top: -5px;
+}
+.card-toolip-placement-leftTop .card-toolip-arrow {
+  top: 8px;
+}
+.card-toolip-placement-leftBottom .card-toolip-arrow {
+  bottom: 8px;
+}
+.card-toolip-placement-bottom .card-toolip-arrow,
+.card-toolip-placement-bottomLeft .card-toolip-arrow,
+.card-toolip-placement-bottomRight .card-toolip-arrow {
+  top: 3px;
+  border-width: 0 5px 5px;
+  border-bottom-color: rgba(255,255,255, 0.85);
+}
+.card-toolip-placement-bottom .card-toolip-arrow {
+  left: 50%;
+  margin-left: -5px;
+}
+.card-toolip-placement-bottomLeft .card-toolip-arrow {
+  left: 16px;
+}
+.card-toolip-placement-bottomRight .card-toolip-arrow {
+  right: 16px;
+}

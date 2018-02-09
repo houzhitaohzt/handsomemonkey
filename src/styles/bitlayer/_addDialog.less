@@ -1,0 +1,91 @@
+/**
+create by houzhitao
+///主要用于列表新增的弹层样式
+*/
+@girdlayout-height: 32px;
+@girdlayout-color: #888;
+.common-add {
+  .row {
+    padding: 5px !important;
+    margin: 0px;
+    .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+      padding: 0;
+    }
+  }
+  .radio-text {
+    /*和单选按钮并排时，后面文字标签的span加上class <span className={'radio-text'}></span>*/
+    display: inline-block;
+    height: @girdlayout-height;
+    line-height: @girdlayout-height;
+    margin-right: 10px;
+  }
+  .datetime {
+    //datatime 时间插件 该className="datetime"加在<DateTime />父级div上
+    /**   使用实例
+        <label className={'col-md-4 col-lg-4'}>预计开始时间</label>
+        <div className={'col-md-8 col-lg-8 datetime'}>
+            <DataTime
+                showTime={true}
+                isShowIcon={true}
+                width={'100%'}
+                disabled={radioState=="已响应"}
+            />
+        </div>
+    */
+    display: inline-block;
+    padding: 0px;
+    div {
+      width: 100%;
+      padding: 0px;
+    }
+  }
+  .add-label {
+    width: 80px;
+    height: 32px;
+    font-size: 14px;
+    text-align: right;
+    margin-right: 10px;
+    color: #9facbd;
+    vertical-align: top;
+    span {
+      color: red;
+    }
+  }
+  .React-select {
+    float: none;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .add-label-default { //无内容时变的颜色
+    width: 80px;
+    height: 32px;
+    font-size: 14px;
+    text-align: right;
+    margin-right: 10px;
+    color: #ccc;
+  }
+  .add-label-active, //当有内容时的字体的颜色变化
+  .add-label-active-table-show { //当有内容时，被点击后出现的样式问题
+    width: 80px;
+    height: 32px;
+    font-size: 14px;
+    text-align: right;
+    margin-right: 10px;
+    color: #a295f4;
+  }
+  .text-input {
+    width: 320px;
+  }
+  .common-add-table {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 35px;
+    .rechecking {
+      color: #a295f4;
+      padding-right: 10px;
+    }
+    div {
+      width: 100%;
+    }
+  }
+}

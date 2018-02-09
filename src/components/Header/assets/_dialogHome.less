@@ -1,0 +1,127 @@
+.menu1 {
+	overflow-y:auto;
+	margin: 10px;
+	.title{
+		margin-bottom: 0;
+	    text-align: center;
+	    font-size: 16px;
+	    padding-top: 8px;
+        padding-bottom: 14px;
+	}
+	ul{
+		overflow: hidden;
+	    padding: 25px;
+	    padding-bottom: 0;
+	    display: flex;
+		li{
+	    	padding-right: 30px;
+	    	float: left;
+				width: 150px;
+	    	&:last-child{
+	    		flex:1;
+	    	}
+	    	h2 {
+			    font-size: 16px;
+			    display: block;
+			    color: #000033;
+			    float: left;
+			    width: 100%;
+			    text-align: right;
+			    font-weight: normal;
+			}
+			.list {
+			    width: 100%;
+			    clear: both;
+			    display: block;
+			    float: left;
+			    height: auto;
+			    display: flex;
+			    div {
+				    line-height: 30px;
+				    color: #6751ed;
+				    float: left;
+				    flex:1;
+				}
+			    h3 {
+				    display: block;
+				    width: 100px;
+				    height: 30px;
+				    line-height: 30px;
+				    font-size: 14px;
+				    color: #000033;
+				    float: left;
+				    margin-bottom: 0;
+				    padding-bottom: 0;
+				}
+				a{
+					padding: 0 10px;
+				    display: block;
+				    width: 140px;
+				    line-height: 30px;
+				    color: #0066cc;
+				    float: left;
+				    cursor:pointer;
+				}
+				a:hover{
+					display: block;
+				    background-color: #0066cc;
+				    color: #fff;
+				    border-radius: 6px;
+				}
+			}
+		}
+		li:last-child{
+		}
+	}
+	.height-lone{
+		background-color: #0066cc;
+		color: #fff !important;
+	}
+
+}
+
+
+
+// 消息中心 
+.message-center{
+	position: relative;
+
+	> div.mesbox{
+		display: none;
+
+		&.on{
+			display: block;
+		}
+	}
+
+	a{
+		color: #000;
+		margin-bottom: 10px;	
+
+		h2{
+			margin: 5px 0px 7px 0px;
+		}
+	}
+
+	span.label{
+		font-size: 13px;
+		background: rgba(67,99,147,.7);
+		cursor: pointer;
+	}
+
+	.delayedBtn{
+		position: absolute;
+		top: 0px;
+		right: 0px;
+	}
+
+	.rc-calendar-picker{
+		z-index: 1200 !important;
+		position: fixed !important;
+		top: auto !important;
+		bottom: 50px !important;
+		right: 100px !important;
+		left: auto !important;
+	}	
+}
+

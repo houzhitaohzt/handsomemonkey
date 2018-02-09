@@ -1,0 +1,984 @@
+@font-face {
+  font-family: 'fooding';
+  src:  url('fonts/fooding.eot?rrhwhu');
+  src:  url('fonts/fooding.eot?rrhwhu#iefix') format('embedded-opentype'),
+    url('fonts/fooding.ttf?rrhwhu') format('truetype'),
+    url('fonts/fooding.woff?rrhwhu') format('woff'),
+    url('fonts/fooding.svg?rrhwhu#fooding') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.foddingicon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'fooding' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  
+  /* Enable Ligatures ================ */
+  letter-spacing: 0;
+  -webkit-font-feature-settings: "liga";
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  -ms-font-feature-settings: "liga" 1;
+  font-feature-settings: "liga";
+  -webkit-font-variant-ligatures: discretionary-ligatures;
+  font-variant-ligatures: discretionary-ligatures;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.fooding-success-mail .path1:before {
+  content: "\ea1f";
+  color: rgb(0, 102, 204);
+}
+.fooding-success-mail .path2:before {
+  content: "\ea20";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.fooding-error-mail .path1:before {
+  content: "\ea21";
+  color: rgb(202, 202, 202);
+}
+.fooding-error-mail .path2:before {
+  content: "\ea22";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.fooding-up-circle-cavity:before {
+  content: "\ea10";
+  color: #06c;
+}
+.fooding-line-vertical:before {
+  content: "\ea11";
+  color: #8c949b;
+}
+.fooding-draft-mail-new:before {
+  content: "\ea12";
+  color: #003;
+}
+.fooding-share-mail-new:before {
+  content: "\ea13";
+  color: #003;
+}
+.fooding-dustbin-mail-new:before {
+  content: "\ea14";
+  color: #003;
+}
+.fooding-history-mail-new:before {
+  content: "\ea15";
+  color: #003;
+}
+.fooding-mass-mail-new:before {
+  content: "\ea16";
+  color: #003;
+}
+.fooding-set-mail-new:before {
+  content: "\ea17";
+  color: #003;
+}
+.fooding-audit-mail-new:before {
+  content: "\ea18";
+  color: #003;
+}
+.fooding-inbox-box-new:before {
+  content: "\ea19";
+  color: #003;
+}
+.fooding-receive-mail-new:before {
+  content: "\ea1a";
+  color: #003;
+}
+.fooding-files-mail-new:before {
+  content: "\ea1b";
+  color: #003;
+}
+.fooding-write-mail-new:before {
+  content: "\ea1c";
+  color: #003;
+}
+.fooding-send-mail-new:before {
+  content: "\ea1d";
+  color: #003;
+}
+.fooding-deleted-mail-new:before {
+  content: "\ea1e";
+  color: #003;
+}
+.fooding-transport-message:before {
+  content: "\ea0f";
+  color: #888;
+}
+.fooding-write-mail:before {
+  content: "\ea02";
+  color: #3c4859;
+}
+.fooding-eye-mail:before {
+  content: "\ea03";
+}
+.fooding-A:before {
+  content: "\ea04";
+}
+.fooding-power:before {
+  content: "\ea05";
+}
+.fooding-draft:before {
+  content: "\ea06";
+}
+.fooding-share-record:before {
+  content: "\ea07";
+}
+.fooding-set-mail:before {
+  content: "\ea08";
+}
+.fooding-Inbox:before {
+  content: "\ea09";
+}
+.fooding-Inmail:before {
+  content: "\ea0a";
+}
+.fooding-type-mail:before {
+  content: "\ea0b";
+}
+.fooding-send-mail:before {
+  content: "\ea0c";
+}
+.fooding-verify-mail:before {
+  content: "\ea0d";
+}
+.fooding-mail:before {
+  content: "\e97c";
+}
+.fooding-lianjie:before {
+  content: "\e98a";
+}
+.fooding-no-readly:before {
+  content: "\e98b";
+}
+.fooding-readly:before {
+  content: "\e98c";
+}
+.fooding-cross:before {
+  content: "\ea01";
+}
+.fooding-weixin:before {
+  content: "\e95c";
+  color: #8b8b8b;
+}
+.fooding-newest-price:before {
+  content: "\e938";
+  color: #8c949b;
+}
+.fooding-oreder-01:before {
+  content: "\e90b";
+  color: #888;
+}
+.fooding-order-02:before {
+  content: "\e92a";
+  color: #888;
+}
+.fooding-group:before {
+  content: "\e909";
+  color: #888;
+}
+.fooding-ckjk:before {
+  content: "\ea00";
+}
+.fooding-cktz:before {
+  content: "\e9fd";
+}
+.fooding-fc:before {
+  content: "\e9fe";
+}
+.fooding-fyxx:before {
+  content: "\e9ff";
+}
+.fooding-excel1 .path1:before {
+  content: "\e9eb";
+  color: rgb(105, 199, 68);
+}
+.fooding-excel1 .path2:before {
+  content: "\e9ec";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.fooding-excel:before {
+  content: "\e9ed";
+  color: #888;
+}
+.fooding-Fill-1:before {
+  content: "\e9ee";
+}
+.fooding-pdf .path1:before {
+  content: "\e9ef";
+  color: rgb(245, 67, 53);
+}
+.fooding-pdf .path2:before {
+  content: "\e9f0";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.fooding-t .path1:before {
+  content: "\e9f1";
+  color: rgb(0, 0, 0);
+}
+.fooding-t .path2:before {
+  content: "\e9f2";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.fooding-word .path1:before {
+  content: "\e9f3";
+  color: rgb(76, 131, 229);
+}
+.fooding-word .path2:before {
+  content: "\e9f4";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.fooding-fob:before {
+  content: "\e9f5";
+}
+.fooding-shouhuo:before {
+  content: "\e9f6";
+}
+.fooding-shwc:before {
+  content: "\e9f7";
+}
+.fooding-图片:before {
+  content: "\e9f8";
+  color: #89c1f6;
+}
+.fooding-未知 .path1:before {
+  content: "\e9f9";
+  color: rgb(219, 219, 219);
+}
+.fooding-未知 .path2:before {
+  content: "\e9fa";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.fooding-未知 .path3:before {
+  content: "\e9fb";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.fooding-未知 .path4:before {
+  content: "\e9fc";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.fooding-baoxiao:before {
+  content: "\e9e3";
+}
+.fooding-fukuanqk:before {
+  content: "\e9e4";
+}
+.fooding-update:before {
+  content: "\e9e5";
+}
+.fooding-close-01:before {
+  content: "\e9e6";
+}
+.fooding-close-other:before {
+  content: "\e9e7";
+}
+.fooding-close-all:before {
+  content: "\e9e8";
+}
+.fooding-lishi:before {
+  content: "\e9e9";
+}
+.fooding-open:before {
+  content: "\e9ea";
+}
+.fooding-facebook:before {
+  content: "\e9df";
+}
+.fooding-whatsapp:before {
+  content: "\e9e0";
+}
+.fooding-weite:before {
+  content: "\e9e1";
+}
+.fooding-weibo:before {
+  content: "\e9e2";
+}
+.fooding-taskmgr:before {
+  content: "\e9d5";
+}
+.fooding-look:before {
+  content: "\e9d6";
+}
+.fooding-fukuanjilu:before {
+  content: "\e9d8";
+}
+.fooding-fukuan:before {
+  content: "\e9d9";
+}
+.fooding-kucun:before {
+  content: "\e9da";
+}
+.fooding-lingqu:before {
+  content: "\e9db";
+}
+.fooding-liucheng:before {
+  content: "\e9dc";
+}
+.fooding-suoku:before {
+  content: "\e9dd";
+}
+.fooding-tiaozheng:before {
+  content: "\e9de";
+}
+.fooding-keep:before {
+  content: "\e9d4";
+}
+.fooding-place:before {
+  content: "\e9d3";
+}
+.fooding-separte:before {
+  content: "\e9b4";
+}
+.fooding-payment-record:before {
+  content: "\e9d0";
+}
+.fooding-spearte:before {
+  content: "\e9d1";
+}
+.fooding-anmout:before {
+  content: "\e9d2";
+}
+.fooding-assign:before {
+  content: "\e9d7";
+}
+.fooding-payment-appyle:before {
+  content: "\e9cc";
+}
+.fooding-cancal-place:before {
+  content: "\e9cf";
+}
+.fooding-payment-apply:before {
+  content: "\e9c0";
+}
+.fooding-count-cost:before {
+  content: "\e9ce";
+}
+.fooding-print:before {
+  content: "\e9a8";
+}
+.fooding-count-price:before {
+  content: "\e9a9";
+}
+.fooding-record:before {
+  content: "\e9cb";
+}
+.fooding-take:before {
+  content: "\e9cd";
+}
+.fooding-error:before {
+  content: "\e9c5";
+}
+.fooding-quote:before {
+  content: "\e9b6";
+}
+.fooding-shall:before {
+  content: "\e9b7";
+}
+.fooding-handle:before {
+  content: "\e9b8";
+}
+.fooding-delay-quote:before {
+  content: "\e9b9";
+}
+.fooding-delay-pay:before {
+  content: "\e9ba";
+}
+.fooding-relese:before {
+  content: "\e9bb";
+}
+.fooding-send-quote:before {
+  content: "\e9bc";
+}
+.fooding-reveser-close:before {
+  content: "\e9bd";
+}
+.fooding-reveser-cancal:before {
+  content: "\e9be";
+}
+.fooding-payment-last:before {
+  content: "\e9bf";
+}
+.fooding-update-date:before {
+  content: "\e9c1";
+}
+.fooding-close-two:before {
+  content: "\e9c2";
+}
+.fooding-charge:before {
+  content: "\e9c3";
+}
+.fooding-char-jilu:before {
+  content: "\e9c4";
+}
+.fooding-jieshou:before {
+  content: "\e9c6";
+}
+.fooding-cancal-p:before {
+  content: "\e9c7";
+}
+.fooding-confirm:before {
+  content: "\e9c8";
+}
+.fooding-collenction:before {
+  content: "\e9c9";
+}
+.fooding-palce:before {
+  content: "\e9ca";
+  color: #000;
+}
+.fooding-put:before {
+  content: "\e9b5";
+}
+.fooding-cancal:before {
+  content: "\e9b3";
+}
+.fooding-accessory:before {
+  content: "\e9aa";
+}
+.fooding-copy-last:before {
+  content: "\e9ab";
+}
+.fooding-creat-order:before {
+  content: "\e9b0";
+}
+.fooding-gathering:before {
+  content: "\e9b1";
+}
+.fooding-stock:before {
+  content: "\e9b2";
+}
+.fooding-order:before {
+  content: "\e950";
+}
+.fooding-Edit:before {
+  content: "\e9af";
+}
+.fooding-fill:before {
+  content: "\e9ae";
+}
+.fooding-booking:before {
+  content: "\e99e";
+}
+.fooding-count-binning:before {
+  content: "\e9ac";
+}
+.fooding-submit:before {
+  content: "\e9ad";
+}
+.fooding-multi:before {
+  content: "\e9a6";
+}
+.fooding-send-price:before {
+  content: "\e994";
+}
+.fooding-call-order:before {
+  content: "\e99d";
+}
+.fooding-lookover:before {
+  content: "\e966";
+}
+.fooding-ordering:before {
+  content: "\e972";
+}
+.fooding-save:before {
+  content: "\e947";
+}
+.fooding-back:before {
+  content: "\e948";
+}
+.fooding-uploading:before {
+  content: "\e904";
+}
+.fooding-download:before {
+  content: "\e90e";
+}
+.fooding-preview:before {
+  content: "\e914";
+}
+.fooding-start:before {
+  content: "\e94a";
+}
+.fooding-approval:before {
+  content: "\e95d";
+}
+.fooding-email:before {
+  content: "\e95e";
+}
+.fooding-payment:before {
+  content: "\e953";
+}
+.fooding-storage:before {
+  content: "\e957";
+}
+.fooding-copy:before {
+  content: "\e949";
+   color: #a295f4;
+}
+.fooding-search-up:before {
+  content: "\e929";
+}
+.fooding-reply:before {
+  content: "\e95a";
+}
+.fooding-send:before {
+  content: "\e90c";
+}
+.fooding-terrace:before {
+  content: "\e91d";
+}
+.fooding-close:before {
+  content: "\e91a";
+}
+.fooding-approve:before {
+  content: "\e91e";
+}
+.fooding-tail:before {
+  content: "\e924";
+}
+.fooding-enquity:before {
+  content: "\e945";
+}
+.fooding-allot:before {
+  content: "\e91b";
+}
+.fooding-send-email:before {
+  content: "\e902";
+}
+.fooding-fax-icon:before {
+  content: "\e995";
+}
+.fooding-mobile-icon:before {
+  content: "\e996";
+}
+.fooding-qq-icon3:before {
+  content: "\e997";
+}
+.fooding-skype-icon3:before {
+  content: "\e998";
+}
+.fooding-telephone-icon:before {
+  content: "\e999";
+}
+.fooding-menu_delete_32:before {
+  content: "\e984";
+}
+.fooding-add_32:before {
+  content: "\e975";
+}
+.fooding-arrow_left_16:before {
+  content: "\e976";
+}
+.fooding-arrow_more_16:before {
+  content: "\e977";
+}
+.fooding-arrow-right_16:before {
+  content: "\e978";
+}
+.fooding-email_32:before {
+  content: "\e979";
+}
+.fooding-Enclosure_16:before {
+  content: "\e97a";
+}
+.fooding-help_32:before {
+  content: "\e97b";
+}
+.fooding-home_16:before {
+  content: "\e97d";
+}
+.fooding-inputbox_arrow_16:before {
+  content: "\e97e";
+}
+.fooding-menu_32:before {
+  content: "\e97f";
+}
+.fooding-message_32:before {
+  content: "\e980";
+}
+.fooding-search_32:before {
+  content: "\e981";
+}
+.fooding-switch_32:before {
+  content: "\e982";
+}
+.fooding-user_32:before {
+  content: "\e983";
+}
+.fooding-write-mails_32:before {
+  content: "\e985";
+}
+.fooding-product:before {
+  content: "\e920";
+}
+.fooding-contact:before {
+  content: "\e940";
+}
+.fooding-yuehui:before {
+  content: "\e946";
+}
+.fooding-calendar:before {
+  content: "\e928";
+}
+.fooding-page:before {
+  content: "\e926";
+}
+.fooding-newprice:before {
+  content: "\e927";
+}
+.fooding-bm-icon3:before {
+  content: "\e9a0";
+}
+.fooding-dui-icon2:before {
+  content: "\e9a1";
+  color: #5b44ec;
+}
+.fooding-fj-icon2:before {
+  content: "\e9a2";
+}
+.fooding-sd-icon2:before {
+  content: "\e9a3";
+}
+.fooding-xb-icon4:before {
+  content: "\e9a4";
+}
+.fooding-ys-icon2:before {
+  content: "\e9a5";
+}
+.fooding-zdbj-icon3:before {
+  content: "\e9a7";
+}
+.fooding-jh-icon2:before {
+  content: "\e99a";
+}
+.fooding-delete-icon4:before {
+  content: "\e99b";
+  color: #a295f4;
+}
+.fooding-sx-icon2:before {
+  content: "\e99c";
+  color: #a295f4;
+}
+.fooding-add-icon3:before {
+  content: "\e99f";
+  color: #a295f4;
+}
+.fooding-change-password:before {
+  content: "\e98e";
+}
+.fooding-information2:before {
+  content: "\e98f";
+}
+.fooding-Sign-out:before {
+  content: "\e990";
+}
+.fooding-arrow_more_162:before {
+  content: "\e98d";
+}
+.fooding-activity:before {
+  content: "\e988";
+}
+.fooding-information:before {
+  content: "\e989";
+}
+.fooding-clear:before {
+  content: "\e986";
+}
+.fooding-search:before {
+  content: "\e987";
+}
+.fooding-bm-icon2:before {
+  content: "\e96c";
+  color: #a295f4;
+}
+.fooding-dui-icon:before {
+  content: "\e96d";
+  color: #5b44ec;
+}
+.fooding-fj-icon02:before {
+  content: "\e96e";
+}
+.fooding-sd-icon:before {
+  content: "\e96f";
+}
+.fooding-xb-icon2:before {
+  content: "\e970";
+}
+.fooding-ysbz-icon:before {
+  content: "\e971";
+}
+.fooding-zdbj-icon2:before {
+  content: "\e973";
+}
+.fooding-new_price:before {
+  content: "\e974";
+}
+.fooding-find-icon:before {
+  content: "\e93f";
+  color: #000;
+}
+.fooding-line-icon2:before {
+  content: "\e941";
+}
+.fooding-bz-icon:before {
+  content: "\e942";
+}
+.fooding-bm-icon:before {
+  content: "\e943";
+}
+.fooding-caigou-icon:before {
+  content: "\e944";
+}
+.fooding-conf-icon:before {
+  content: "\e94b";
+}
+.fooding-jikuaidi-icon:before {
+  content: "\e94c";
+  color: #000;
+}
+.fooding-jianzhuan:before {
+  content: "\e94d";
+}
+.fooding-jianyan:before {
+  content: "\e94e";
+}
+.fooding-jingzheng:before {
+  content: "\e94f";
+  color: #8c949b;
+}
+.fooding-maitou:before {
+  content: "\e951";
+}
+.fooding-delete-icon3:before {
+  content: "\e952";
+  color: #a295f4;
+}
+.fooding-shixiao:before {
+  content: "\e954";
+  color: #a295f4;
+}
+.fooding-shoukuan:before {
+  content: "\e955";
+  color: #a295f4;
+}
+.fooding-seach-icon2:before {
+  content: "\e956";
+  color: #8c949b;
+}
+.fooding-tousu:before {
+  content: "\e958";
+}
+.fooding-tuopan:before {
+  content: "\e959";
+}
+.fooding-xiugai-icon3:before {
+  content: "\e95b";
+}
+.fooding-yuhui-icon3:before {
+  content: "\e95f";
+  color: #000;
+}
+.fooding-yushu-icon:before {
+  content: "\e960";
+  color: #a295f4;
+}
+.fooding-add-icon2:before {
+  content: "\e961";
+  color: #a295f4;
+}
+.fooding-credential-icon:before {
+  content: "\e962";
+}
+.fooding-zsj-icon:before {
+  content: "\e963";
+  color: #000;
+}
+.fooding-zd-icon:before {
+  content: "\e964";
+}
+.fooding-new_price_icon:before {
+  content: "\e965";
+}
+.fooding-biem_icon:before {
+  content: "\e991";
+}
+.fooding-xin_icon:before {
+  content: "\e992";
+}
+.fooding-ys_icon:before {
+  content: "\e993";
+}
+.fooding-bm_icon2:before {
+  content: "\e93c";
+}
+.fooding-xin_icon3:before {
+  content: "\e93d";
+}
+.fooding-yanse_icon2:before {
+  content: "\e93e";
+}
+.fooding-qq-icon2:before {
+  content: "\e967";
+}
+.fooding-skype-icon2:before {
+  content: "\e968";
+}
+.fooding-fax-icon2:before {
+  content: "\e969";
+}
+.fooding-tel_icon2:before {
+  content: "\e96a";
+}
+.fooding-phone_icon2:before {
+  content: "\e96b";
+}
+.fooding-sc_icon:before {
+  content: "\e919";
+}
+.fooding-merge_icon:before {
+  content: "\e91f";
+}
+.fooding-delete_icon:before {
+  content: "\e921";
+}
+.fooding-sj_icon2:before {
+  content: "\e922";
+}
+.fooding-alter_icon2:before {
+  content: "\e923";
+}
+.fooding-yuehui_icon2:before {
+  content: "\e925";
+  color: #000;
+}
+.fooding-alter:before {
+  content: "\e91c";
+}
+.fooding-cop_icon:before {
+  content: "\e900";
+}
+.fooding-yuehui_icon:before {
+  content: "\e901";
+  color: #000;
+}
+.fooding-user_icon:before {
+  content: "\e903";
+}
+.fooding-alter_icon:before {
+  content: "\e905";
+}
+.fooding-pull_down_icon:before {
+  content: "\e906";
+}
+.fooding-iphone:before {
+  content: "\e907";
+}
+.fooding-business_icon:before {
+  content: "\e908";
+}
+.fooding-cofirm_icon:before {
+  content: "\e90a";
+}
+.fooding-nation_icon:before {
+  content: "\e90d";
+}
+.fooding-provision_icon:before {
+  content: "\e90f";
+}
+.fooding-company_icon:before {
+  content: "\e910";
+}
+.fooding-tel_icon:before {
+  content: "\e911";
+}
+.fooding-fax_icon:before {
+  content: "\e912";
+}
+.fooding-dep_icon:before {
+  content: "\e913";
+}
+.fooding-task_icon:before {
+  content: "\e915";
+}
+.fooding-meeting_icon:before {
+  content: "\e916";
+}
+.fooding-skype-icon:before {
+  content: "\e917";
+}
+.fooding-qq-icon:before {
+  content: "\e918";
+}
+.fooding-merge_icon2:before {
+  content: "\e92b";
+}
+.fooding-boult_icon:before {
+  content: "\e92c";
+}
+.fooding-clean_icon:before {
+  content: "\e92d";
+}
+.fooding-de-weight_icon:before {
+  content: "\e92e";
+}
+.fooding-screen_icon:before {
+  content: "\e92f";
+}
+.fooding-screen_up_icon:before {
+  content: "\e930";
+}
+.fooding-delete_icon2:before {
+  content: "\e931";
+}
+.fooding-search_icon:before {
+  content: "\e932";
+}
+.fooding-down_icon2:before {
+  content: "\e933";
+}
+.fooding-page_icon:before {
+  content: "\e934";
+}
+.fooding-xin_i_icon:before {
+  content: "\e935";
+}
+.fooding-jiantou_icon:before {
+  content: "\e936";
+}
+.fooding-add_i_icon:before {
+  content: "\e937";
+}
+.fooding-zk_icon:before {
+  content: "\e939";
+}
+.fooding-up_icon:before {
+  content: "\e93a";
+}
+.fooding-new_lx:before {
+  content: "\e93b";
+  color: #8c949b;
+}
+.fooding-deleted-mail:before {
+  content: "\ea0e";
+  color: #052566;
+}
+
+
+
